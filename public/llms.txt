@@ -18,7 +18,8 @@
 
 ## Learn
 
-- [Blog](https://www.rxbodyfx.com/blog/): Patient education on medical weight loss, hormone care, and telehealth.
+- [Blog](https://www.rxbodyfx.com/blog/): Patient education across medication, weight loss, hormones, lifestyle, preventive care, and telehealth topics, including: semaglutide vs. tirzepatide, GLP-1 results timelines, stopping GLP-1 medication, compounded vs. brand-name GLP-1, weight loss plateaus, perimenopause and weight gain, TRT myths vs. facts, sleep and weight management, stress/cortisol and weight, understanding bloodwork, remote patient monitoring, and telehealth legitimacy.
+- [Resources](https://www.rxbodyfx.com/resources/): Categorized library of all guides above, organized by topic.
 - [FAQ](https://www.rxbodyfx.com/faq/): Common questions about the program, telehealth eligibility, and privacy.
 
 ## Team
