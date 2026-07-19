@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
+import Reveal from '../components/Reveal';
 
 export default function Contact() {
   return (
@@ -9,8 +10,8 @@ export default function Contact() {
         description="Book your free consultation with RxBODYFx. Call, message, or request an appointment online &mdash; in Friendswood, TX or nationwide by telehealth."
         path="/contact/"
       />
-      <section className="max-w-4xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-10 md:gap-14">
-        <div>
+      <section className="max-w-4xl mx-auto px-6 pt-16 pb-10 grid md:grid-cols-2 gap-10 md:gap-14">
+        <Reveal>
           <p className="eyebrow text-clay mb-4">Get Started</p>
           <h1 className="font-display text-4xl text-pine-800 leading-tight">
             Your consultation is free.
@@ -40,38 +41,52 @@ export default function Contact() {
               </p>
             </div>
           </div>
-        </div>
+        </Reveal>
 
-        <form className="bg-white border border-pine/10 rounded-2xl p-8 space-y-4" aria-label="Consultation request form">
-          <div>
-            <label htmlFor="name" className="text-sm font-medium text-pine-800">Full name</label>
-            <input id="name" name="name" type="text" required autoComplete="name" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand" />
-          </div>
-          <div>
-            <label htmlFor="email" className="text-sm font-medium text-pine-800">Email</label>
-            <input id="email" name="email" type="email" required autoComplete="email" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand" />
-          </div>
-          <div>
-            <label htmlFor="phone" className="text-sm font-medium text-pine-800">Phone</label>
-            <input id="phone" name="phone" type="tel" required autoComplete="tel" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand" />
-          </div>
-          <div>
-            <label htmlFor="interest" className="text-sm font-medium text-pine-800">What are you interested in?</label>
-            <select id="interest" name="interest" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand">
-              <option>Medical Weight Loss</option>
-              <option>Hormone Optimization</option>
-              <option>Nutrition &amp; Coaching</option>
-              <option>Primary Care</option>
-              <option>Not Sure Yet</option>
-            </select>
-          </div>
-          <button type="button" className="w-full bg-pine-800 text-sand py-3 rounded-full font-medium hover:bg-clay transition-colors">
-            Request My Free Consultation
-          </button>
-          <p className="text-xs text-pine-800/50">
-            Form submissions to be wired to the practice&rsquo;s scheduling/CRM system.
-          </p>
-        </form>
+        <Reveal delay={100}>
+          <form className="bg-white border border-pine/10 rounded-2xl p-8 space-y-4" aria-label="Consultation request form">
+            <div>
+              <label htmlFor="name" className="text-sm font-medium text-pine-800">Full name</label>
+              <input id="name" name="name" type="text" required autoComplete="name" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand" />
+            </div>
+            <div>
+              <label htmlFor="email" className="text-sm font-medium text-pine-800">Email</label>
+              <input id="email" name="email" type="email" required autoComplete="email" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand" />
+            </div>
+            <div>
+              <label htmlFor="phone" className="text-sm font-medium text-pine-800">Phone</label>
+              <input id="phone" name="phone" type="tel" required autoComplete="tel" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand" />
+            </div>
+            <div>
+              <label htmlFor="interest" className="text-sm font-medium text-pine-800">What are you interested in?</label>
+              <select id="interest" name="interest" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand">
+                <option>Medical Weight Loss</option>
+                <option>Hormone Optimization</option>
+                <option>Nutrition &amp; Coaching</option>
+                <option>Primary Care</option>
+                <option>Not Sure Yet</option>
+              </select>
+            </div>
+            <button type="button" className="w-full bg-pine-800 text-sand py-3 rounded-full font-medium hover:bg-clay transition-colors">
+              Request My Free Consultation
+            </button>
+            <p className="text-xs text-pine-800/50">
+              Form submissions to be wired to the practice&rsquo;s scheduling/CRM system.
+            </p>
+          </form>
+        </Reveal>
+      </section>
+
+      <section className="max-w-4xl mx-auto px-6 pb-20">
+        <Reveal className="rounded-2xl overflow-hidden border border-pine/10 h-72">
+          <iframe
+            title="RxBODYFx location map"
+            src="https://maps.google.com/maps?q=121%20W%20Parkwood%20Ave%2C%20Friendswood%2C%20TX%2077546&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            className="w-full h-full border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </Reveal>
       </section>
     </Layout>
   );

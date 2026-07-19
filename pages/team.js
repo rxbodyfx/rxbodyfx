@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import Image from 'next/image';
+import Reveal from '../components/Reveal';
 
 const team = [
   {
@@ -50,8 +51,8 @@ export default function Team() {
       </section>
 
       <section className="max-w-4xl mx-auto px-6 pb-20 grid sm:grid-cols-2 gap-8">
-        {team.map((t) => (
-          <div key={t.name} className="border border-pine/10 rounded-2xl overflow-hidden bg-white">
+        {team.map((t, i) => (
+          <Reveal key={t.name} delay={i * 100} className="border border-pine/10 rounded-2xl overflow-hidden bg-white hover:-translate-y-1 hover:shadow-md transition-all">
             <div className="relative w-full h-64">
               <Image src={t.photo} alt={t.name} fill sizes="(max-width: 640px) 100vw, 400px" style={{ objectFit: 'cover' }} />
             </div>
@@ -60,12 +61,12 @@ export default function Team() {
               <p className="eyebrow text-clay mt-1 mb-3">{t.role}</p>
               <p className="text-sm leading-relaxed text-pine-800/75">{t.bio}</p>
             </div>
-          </div>
+          </Reveal>
         ))}
       </section>
 
       <section className="max-w-4xl mx-auto px-6 pb-20 grid md:grid-cols-2 gap-10">
-        <div>
+        <Reveal>
           <h2 className="font-display text-xl text-pine-800">How We Practice</h2>
           <p className="mt-3 leading-relaxed text-pine-800/80">
             We start with a free consultation and take time to understand the
@@ -73,15 +74,15 @@ export default function Team() {
             finances, medical history, and hormones &mdash; before building a
             plan.
           </p>
-        </div>
-        <div>
+        </Reveal>
+        <Reveal delay={100}>
           <h2 className="font-display text-xl text-pine-800">Evidence-Based, Individualized</h2>
           <p className="mt-3 leading-relaxed text-pine-800/80">
             Every plan considers your individual medical history and
             preferences &mdash; nurse-led care, primary care services, and
             evidence-based therapies all inform how we treat you.
           </p>
-        </div>
+        </Reveal>
       </section>
     </Layout>
   );

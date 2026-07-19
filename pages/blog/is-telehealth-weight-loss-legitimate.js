@@ -1,6 +1,14 @@
 import Layout from '../../components/Layout';
 import Seo from '../../components/Seo';
 import Link from 'next/link';
+import Reveal from '../../components/Reveal';
+import Checklist from '../../components/Checklist';
+
+const checklist = [
+  { icon: 'labWork', label: 'Does it start with labs, or just a questionnaire?', copy: 'Bloodwork should come before a prescription, not instead of one.' },
+  { icon: 'provider', label: 'Is a licensed provider actually involved?', copy: 'Look for a physician or advanced practice provider reviewing your case.' },
+  { icon: 'ongoing', label: 'What happens after you start?', copy: 'Coaching and follow-up labs matter as much as the first prescription.' },
+];
 
 export default function Post() {
   return (
@@ -22,31 +30,14 @@ export default function Post() {
             fast, and not every program is built the same way. Here&rsquo;s
             what&rsquo;s worth checking before you enroll anywhere.
           </p>
+        </div>
 
-          <h2 className="font-display text-2xl text-pine-800 pt-4">Does it start with labs, or just a questionnaire?</h2>
-          <p>
-            A program that prescribes medication based on a short online form
-            alone isn&rsquo;t practicing the same standard of care as one that
-            reviews bloodwork first. Labs matter &mdash; they catch
-            contraindications and help a provider choose the right medication
-            and dose.
-          </p>
+        <Reveal className="my-8 bg-white border border-pine/10 rounded-2xl p-7">
+          <p className="eyebrow text-clay mb-5">Before You Enroll, Ask</p>
+          <Checklist items={checklist} />
+        </Reveal>
 
-          <h2 className="font-display text-2xl text-pine-800 pt-4">Is a licensed provider actually involved?</h2>
-          <p>
-            Look for a program where a physician or advanced practice
-            provider reviews your case &mdash; not just a fulfillment pipeline
-            that ships medication after a form is submitted.
-          </p>
-
-          <h2 className="font-display text-2xl text-pine-800 pt-4">What happens after you start?</h2>
-          <p>
-            Ongoing care matters as much as the first prescription. Coaching,
-            follow-up labs, and a way to reach your care team between visits
-            are what separate a program built to support long-term results
-            from one built to sell a subscription.
-          </p>
-
+        <div className="space-y-6 text-pine-800/85 leading-relaxed text-lg">
           <h2 className="font-display text-2xl text-pine-800 pt-4">How RxBODYFx approaches this</h2>
           <p>
             RxBODYFx started as an in-person clinic in Friendswood, Texas, and

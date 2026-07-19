@@ -4,6 +4,7 @@ import FivePillars from '../components/FivePillars';
 import Link from 'next/link';
 import Icon from '../components/Icon';
 import Reveal from '../components/Reveal';
+import StatsStrip from '../components/StatsStrip';
 
 const services = [
   {
@@ -64,6 +65,8 @@ export default function Home() {
         </div>
         <FivePillars />
       </section>
+
+      <StatsStrip />
 
       <div className="rule max-w-6xl mx-auto" />
 
