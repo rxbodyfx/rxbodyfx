@@ -2,6 +2,7 @@ import Layout from '../../components/Layout';
 import Seo from '../../components/Seo';
 import Link from 'next/link';
 import Icon from '../../components/Icon';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import Reveal from '../../components/Reveal';
 
 const categories = [
@@ -33,6 +34,7 @@ export default function LabWork() {
         description="Bloodwork, hormone panels, genetic, and food sensitivity testing through our RUPA lab partnership &mdash; the foundation every RxBODYFx plan is built on."
         path="/services/lab-work/"
       />
+      <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Services', href: '/services/' }, { label: 'Lab Work', href: '/services/lab-work/' }]} />
       <section className="max-w-4xl mx-auto px-6 pt-16 pb-10">
         <Reveal>
           <div className="w-14 h-14 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800 mb-6">

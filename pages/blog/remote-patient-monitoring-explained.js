@@ -1,7 +1,17 @@
 import Layout from '../../components/Layout';
 import Seo from '../../components/Seo';
 import Link from 'next/link';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import RpmDiagram from '../../components/RpmDiagram';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'What Is Remote Patient Monitoring, and How Does It Work?',
+  datePublished: '2026-01-15',
+  dateModified: '2026-01-15',
+  author: { '@type': 'Organization', name: 'RxBODYFx' },
+};
 
 export default function Post() {
   return (
@@ -10,7 +20,9 @@ export default function Post() {
         title="What Is Remote Patient Monitoring? | RxBODYFx"
         description="How remote patient monitoring technology supports telehealth weight loss and hormone care, explained in plain terms."
         path="/blog/remote-patient-monitoring-explained/"
+        jsonLd={jsonLd}
       />
+      <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog/' }, { label: 'What Is Remote Patient Monitoring?', href: '/blog/remote-patient-monitoring-explained/' }]} />
       <article className="max-w-3xl mx-auto px-6 pt-16 pb-24">
         <p className="eyebrow text-clay mb-4">January 2026</p>
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">

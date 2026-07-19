@@ -2,6 +2,7 @@ import Layout from '../../components/Layout';
 import Seo from '../../components/Seo';
 import Link from 'next/link';
 import Icon from '../../components/Icon';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import Reveal from '../../components/Reveal';
 import Checklist from '../../components/Checklist';
 
@@ -27,6 +28,7 @@ export default function PrimaryCare() {
         description="Routine check-ups, vaccinations, and chronic disease management from a team focused on prevention and early intervention, in Friendswood, TX."
         path="/services/primary-care/"
       />
+      <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Services', href: '/services/' }, { label: 'Primary Care', href: '/services/primary-care/' }]} />
       <section className="max-w-4xl mx-auto px-6 pt-16 pb-10">
         <Reveal>
           <div className="w-14 h-14 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800 mb-6">

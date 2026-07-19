@@ -6,7 +6,7 @@ export default function OrgSchema() {
     name: 'RxBODYFx Metabolic Reset Weight Loss Program',
     alternateName: 'RxBODYFx',
     url: 'https://www.rxbodyfx.com',
-    logo: 'https://www.rxbodyfx.com/team/eleanor-hethcox.webp',
+    logo: 'https://www.rxbodyfx.com/icon-512.png',
     telephone: '+1-281-612-2320',
     address: {
       '@type': 'PostalAddress',

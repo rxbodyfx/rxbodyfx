@@ -1,7 +1,17 @@
 import Layout from '../../components/Layout';
 import Seo from '../../components/Seo';
 import Link from 'next/link';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import WeightLossChart from '../../components/WeightLossChart';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: "Semaglutide vs. Tirzepatide: What's the Difference?",
+  datePublished: '2026-01-15',
+  dateModified: '2026-01-15',
+  author: { '@type': 'Organization', name: 'RxBODYFx' },
+};
 
 export default function Post() {
   return (
@@ -10,7 +20,9 @@ export default function Post() {
         title="Semaglutide vs. Tirzepatide: What's the Difference? | RxBODYFx"
         description="Both semaglutide and tirzepatide are GLP-1 medications used in medical weight loss, but they work a little differently. Here's an educational overview."
         path="/blog/semaglutide-vs-tirzepatide/"
+        jsonLd={jsonLd}
       />
+      <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog/' }, { label: 'Semaglutide vs. Tirzepatide', href: '/blog/semaglutide-vs-tirzepatide/' }]} />
       <article className="max-w-3xl mx-auto px-6 pt-16 pb-24">
         <p className="eyebrow text-clay mb-4">January 2026</p>
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">

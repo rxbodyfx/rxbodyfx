@@ -2,6 +2,7 @@ import Layout from '../../components/Layout';
 import Seo from '../../components/Seo';
 import Link from 'next/link';
 import Icon from '../../components/Icon';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import Reveal from '../../components/Reveal';
 import Checklist from '../../components/Checklist';
 
@@ -28,6 +29,7 @@ export default function HealthScreenings() {
         description="Detect potential health problems before symptoms appear. Blood pressure, cholesterol, glucose, BMI, and cancer screenings based on your risk profile."
         path="/services/health-screenings/"
       />
+      <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Services', href: '/services/' }, { label: 'Health Screenings', href: '/services/health-screenings/' }]} />
       <section className="max-w-4xl mx-auto px-6 pt-16 pb-10">
         <Reveal>
           <div className="w-14 h-14 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800 mb-6">

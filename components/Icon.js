@@ -77,7 +77,7 @@ const icons = {
 
 export default function Icon({ name, className = 'w-6 h-6', ...props }) {
   return (
-    <svg viewBox="0 0 24 24" className={className} {...base} {...props}>
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true" {...base} {...props}>
       {icons[name] || null}
     </svg>
   );

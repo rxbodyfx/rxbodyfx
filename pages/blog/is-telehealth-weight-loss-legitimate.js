@@ -1,6 +1,7 @@
 import Layout from '../../components/Layout';
 import Seo from '../../components/Seo';
 import Link from 'next/link';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import Reveal from '../../components/Reveal';
 import Checklist from '../../components/Checklist';
 
@@ -10,6 +11,15 @@ const checklist = [
   { icon: 'ongoing', label: 'What happens after you start?', copy: 'Coaching and follow-up labs matter as much as the first prescription.' },
 ];
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Is Telehealth Weight Loss Legitimate?',
+  datePublished: '2026-01-15',
+  dateModified: '2026-01-15',
+  author: { '@type': 'Organization', name: 'RxBODYFx' },
+};
+
 export default function Post() {
   return (
     <Layout>
@@ -17,7 +27,9 @@ export default function Post() {
         title="Is Telehealth Weight Loss Legitimate? | RxBODYFx"
         description="What separates a real medical weight loss program from a subscription that just ships medication, and what to look for before you enroll."
         path="/blog/is-telehealth-weight-loss-legitimate/"
+        jsonLd={jsonLd}
       />
+      <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog/' }, { label: 'Is Telehealth Weight Loss Legitimate?', href: '/blog/is-telehealth-weight-loss-legitimate/' }]} />
       <article className="max-w-3xl mx-auto px-6 pt-16 pb-24">
         <p className="eyebrow text-clay mb-4">January 2026</p>
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
