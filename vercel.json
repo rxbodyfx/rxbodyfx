@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/resources",
+      "destination": "/research",
+      "permanent": true
+    },
+    {
+      "source": "/resources/",
+      "destination": "/research/",
+      "permanent": true
+    }
+  ]
+}

@@ -138,6 +138,21 @@ export default function Research() {
 
       <section className="max-w-4xl mx-auto px-6 py-16">
         <Reveal>
+          <p className="eyebrow text-clay mb-4">Patient Stories</p>
+          <h2 className="font-display text-2xl text-pine-800 mb-3">Real experience, not just trial data.</h2>
+          <div className="border border-dashed border-pine/25 rounded-2xl p-10 text-center mt-6">
+            <p className="text-pine-800/70 leading-relaxed max-w-md mx-auto">
+              Real patient transformations and case studies to be added here,
+              reviewed and approved by the practice before publishing.
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
+      <div className="rule max-w-4xl mx-auto" />
+
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <Reveal>
           <h2 className="font-display text-2xl text-pine-800 mb-4">How this applies to your plan</h2>
           <p className="text-pine-800/80 leading-relaxed max-w-2xl">
             Trial averages tell you what&rsquo;s possible, not what will happen

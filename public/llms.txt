@@ -12,14 +12,10 @@
 - [Lab Work](https://www.rxbodyfx.com/services/lab-work/): Bloodwork, genetic, and food sensitivity testing via RUPA lab partnership.
 - [Telehealth (All 50 States)](https://www.rxbodyfx.com/telehealth/): Virtual visits, prescription management, and remote patient monitoring via the RxBODYFx app, available nationwide through the Asher Health partnership.
 
-## Research & Evidence
-
-- [Research & Evidence](https://www.rxbodyfx.com/research/): Summary of published clinical trial data (STEP and SURMOUNT trial programs) behind the GLP-1 medications used in the weight loss program, with links to original sources.
-
 ## Learn
 
-- [Blog](https://www.rxbodyfx.com/blog/): Patient education across medication, weight loss, hormones, lifestyle, preventive care, and telehealth topics, including: semaglutide vs. tirzepatide, GLP-1 results timelines, stopping GLP-1 medication, compounded vs. brand-name GLP-1, weight loss plateaus, perimenopause and weight gain, TRT myths vs. facts, sleep and weight management, stress/cortisol and weight, understanding bloodwork, remote patient monitoring, and telehealth legitimacy.
-- [Resources](https://www.rxbodyfx.com/resources/): Categorized library of all guides above, organized by topic.
+- [Research & Evidence](https://www.rxbodyfx.com/research/): Published clinical trial data, a national obesity statistics dashboard (CDC/NHANES), a glossary, links to trusted external sources (Obesity Medicine Association, The Obesity Society, CDC, NIDDK/NIH, named researchers), and patient stories.
+- [Blog](https://www.rxbodyfx.com/blog/): Categorized patient education library across medication, weight loss, hormones, lifestyle, preventive care, and telehealth topics, including: semaglutide vs. tirzepatide, GLP-1 results timelines, stopping GLP-1 medication, compounded vs. brand-name GLP-1, weight loss plateaus, perimenopause and weight gain, TRT myths vs. facts, sleep and weight management, stress/cortisol and weight, understanding bloodwork, remote patient monitoring, and telehealth legitimacy.
 - [FAQ](https://www.rxbodyfx.com/faq/): Common questions about the program, telehealth eligibility, and privacy.
 
 ## Team

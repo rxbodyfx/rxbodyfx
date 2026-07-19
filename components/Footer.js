@@ -28,7 +28,6 @@ export default function Footer() {
             <li><Link href="/telehealth/" className="hover:text-sand">Telehealth, 50 States</Link></li>
             <li><Link href="/research/" className="hover:text-sand">Research &amp; Evidence</Link></li>
             <li><Link href="/blog/" className="hover:text-sand">Blog</Link></li>
-            <li><Link href="/resources/" className="hover:text-sand">Resources</Link></li>
             <li><Link href="/faq/" className="hover:text-sand">FAQ</Link></li>
           </ul>
         </div>

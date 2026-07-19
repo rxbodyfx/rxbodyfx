@@ -11,7 +11,6 @@ const primaryLinks = [
 const learnLinks = [
   { href: '/blog/', label: 'Blog' },
   { href: '/research/', label: 'Research & Evidence' },
-  { href: '/resources/', label: 'Resources' },
 ];
 
 export default function Header() {
