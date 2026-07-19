@@ -4,6 +4,7 @@ import { useState } from 'react';
 const primaryLinks = [
   { href: '/services/', label: 'Services' },
   { href: '/telehealth/', label: 'Telehealth' },
+  { href: '/compare/', label: 'Compare' },
   { href: '/team/', label: 'Our Team' },
   { href: '/faq/', label: 'FAQ' },
 ];

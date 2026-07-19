@@ -65,6 +65,12 @@ export const posts = [
     category: 'Preventive Care',
   },
   {
+    slug: 'telehealth-testosterone-legal-by-state',
+    title: 'Is Telehealth Testosterone Therapy Legal in Your State?',
+    excerpt: 'Testosterone is a controlled substance with different telehealth rules than GLP-1 medications.',
+    category: 'Telehealth',
+  },
+  {
     slug: 'remote-patient-monitoring-explained',
     title: 'What Is Remote Patient Monitoring?',
     excerpt: 'The technology behind telehealth weight loss programs, explained.',

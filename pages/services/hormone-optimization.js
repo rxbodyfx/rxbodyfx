@@ -82,6 +82,9 @@ export default function HormoneOptimization() {
             levels, addressing energy, muscle mass, mood, and libido, with
             regular lab monitoring to keep levels in a safe, effective range.
           </p>
+          <Link href="/blog/telehealth-testosterone-legal-by-state/" className="mt-3 inline-block text-xs text-clay-dark font-medium">
+            Considering telehealth? Read about state rules for testosterone therapy &rarr;
+          </Link>
         </Reveal>
         <Reveal delay={100} className="border border-pine/10 rounded-2xl p-7 bg-white">
           <h2 className="font-display text-xl text-pine-800">For Women</h2>

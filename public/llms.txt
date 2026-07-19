@@ -5,6 +5,7 @@
 ## Services
 
 - [Get Started](https://www.rxbodyfx.com/get-started/): Interactive 3-question tool to help visitors identify which program fits their goals before booking a consultation.
+- [Compare](https://www.rxbodyfx.com/compare/): How RxBODYFx's hybrid, provider-led model compares to typical subscription-based telehealth (labs first, licensed provider review, dedicated nutritionist, medication included).
 
 - [Medical Weight Loss](https://www.rxbodyfx.com/services/medical-weight-loss/): GLP-1 therapy (semaglutide, tirzepatide) and non-medical weight management, built on five pillars of health (diet, exercise, nutrition, hormone optimization, sleep). Medication cost is included in the program, no insurance required.
 - [Hormone Optimization](https://www.rxbodyfx.com/services/hormone-optimization/): Testosterone and hormone therapy for fatigue, mood, and weight-related symptoms.
