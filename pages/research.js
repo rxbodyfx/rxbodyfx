@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Reveal from '../components/Reveal';
 import WeightLossChart from '../components/WeightLossChart';
 import ReviewedBy from '../components/ReviewedBy';
+import StatDashboard from '../components/StatDashboard';
+import TrustedSources from '../components/TrustedSources';
 
 const studies = [
   {
@@ -64,6 +66,12 @@ export default function Research() {
         <WeightLossChart />
       </section>
 
+      <section className="max-w-4xl mx-auto px-6 py-8">
+        <Reveal>
+          <StatDashboard />
+        </Reveal>
+      </section>
+
       <section className="max-w-4xl mx-auto px-6 py-12 space-y-6">
         {studies.map((s, i) => (
           <Reveal key={s.name} delay={i * 100} className="border border-pine/10 rounded-2xl p-7 bg-white">
@@ -108,6 +116,22 @@ export default function Research() {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      <div className="rule max-w-4xl mx-auto" />
+
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <Reveal>
+          <p className="eyebrow text-clay mb-4">Beyond Our Own Program</p>
+          <h2 className="font-display text-2xl text-pine-800 mb-3">Trusted voices in obesity medicine.</h2>
+          <p className="text-pine-800/70 leading-relaxed max-w-2xl mb-8">
+            We don&rsquo;t expect you to rely on RxBODYFx alone as a source
+            &mdash; here are the professional bodies, government data, and
+            researchers whose published work informs this field, including
+            our own approach.
+          </p>
+        </Reveal>
+        <TrustedSources />
       </section>
 
       <div className="rule max-w-4xl mx-auto" />

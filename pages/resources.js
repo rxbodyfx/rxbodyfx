@@ -55,7 +55,7 @@ export default function Resources() {
           <p className="eyebrow text-clay mb-5">Clinical Data</p>
           <Link href="/research/" className="block border border-pine/10 rounded-2xl p-7 bg-white hover:border-clay transition-colors max-w-lg">
             <h2 className="font-display text-lg text-pine-800">Research &amp; Evidence</h2>
-            <p className="mt-2 text-sm text-pine-800/70">Published clinical trial data behind the medications used in our program, with links to original sources.</p>
+            <p className="mt-2 text-sm text-pine-800/70">Clinical trial data, a national obesity statistics dashboard, and links to trusted external sources: CDC, NIH, and leading obesity researchers.</p>
           </Link>
         </Reveal>
       </section>
