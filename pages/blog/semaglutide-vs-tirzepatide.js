@@ -1,6 +1,7 @@
 import Layout from '../../components/Layout';
 import Seo from '../../components/Seo';
 import Link from 'next/link';
+import WeightLossChart from '../../components/WeightLossChart';
 
 export default function Post() {
   return (
@@ -60,7 +61,11 @@ export default function Post() {
             personal biology, which is exactly why lab work and provider
             oversight matter more than picking a medication off a chart.
           </p>
+        </div>
 
+        <WeightLossChart />
+
+        <div className="space-y-6 text-pine-800/85 leading-relaxed text-lg">
           <h2 className="font-display text-2xl text-pine-800 pt-4">Which one is right for you?</h2>
           <p>
             There isn&rsquo;t a universal answer &mdash; the right medication

@@ -1,6 +1,7 @@
 import Layout from '../../components/Layout';
 import Seo from '../../components/Seo';
 import Link from 'next/link';
+import RpmDiagram from '../../components/RpmDiagram';
 
 export default function Post() {
   return (
@@ -23,7 +24,11 @@ export default function Post() {
             an ongoing connection between what&rsquo;s happening with your
             health and the team managing your care.
           </p>
+        </div>
 
+        <RpmDiagram />
+
+        <div className="space-y-6 text-pine-800/85 leading-relaxed text-lg">
           <h2 className="font-display text-2xl text-pine-800 pt-4">What it actually tracks</h2>
           <p>
             Through the RxBODYFx app, patients can sync data like weight,

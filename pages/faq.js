@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
+import Reveal from '../components/Reveal';
 
 const faqs = [
   {
@@ -34,6 +36,35 @@ const jsonLd = {
   })),
 };
 
+function FaqItem({ item, index }) {
+  const [open, setOpen] = useState(index === 0);
+  return (
+    <Reveal delay={index * 60} className="border border-pine/10 rounded-2xl bg-white overflow-hidden">
+      <button
+        className="w-full flex items-center justify-between gap-4 text-left px-6 py-5"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+      >
+        <h2 className="font-display text-lg text-pine-800">{item.q}</h2>
+        <svg
+          width="18" height="18" viewBox="0 0 24 24" fill="none"
+          className={`shrink-0 text-clay transition-transform duration-300 ${open ? 'rotate-45' : ''}`}
+        >
+          <path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        </svg>
+      </button>
+      <div
+        className="grid transition-all duration-300 ease-out"
+        style={{ gridTemplateRows: open ? '1fr' : '0fr' }}
+      >
+        <div className="overflow-hidden">
+          <p className="px-6 pb-5 text-pine-800/80 leading-relaxed">{item.a}</p>
+        </div>
+      </div>
+    </Reveal>
+  );
+}
+
 export default function FAQ() {
   return (
     <Layout>
@@ -46,12 +77,9 @@ export default function FAQ() {
       <section className="max-w-3xl mx-auto px-6 pt-16 pb-20">
         <p className="eyebrow text-clay mb-4">FAQ</p>
         <h1 className="font-display text-4xl text-pine-800 mb-10">Common questions</h1>
-        <div className="space-y-8">
-          {faqs.map((f) => (
-            <div key={f.q} className="border-b border-pine/10 pb-8">
-              <h2 className="font-display text-lg text-pine-800">{f.q}</h2>
-              <p className="mt-2 text-pine-800/80 leading-relaxed">{f.a}</p>
-            </div>
+        <div className="space-y-4">
+          {faqs.map((f, i) => (
+            <FaqItem key={f.q} item={f} index={i} />
           ))}
         </div>
       </section>

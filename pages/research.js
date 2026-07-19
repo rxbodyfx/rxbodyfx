@@ -1,6 +1,8 @@
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import Link from 'next/link';
+import Reveal from '../components/Reveal';
+import WeightLossChart from '../components/WeightLossChart';
 
 const studies = [
   {
@@ -52,9 +54,13 @@ export default function Research() {
         </p>
       </section>
 
-      <section className="max-w-4xl mx-auto px-6 pb-16 space-y-6">
-        {studies.map((s) => (
-          <div key={s.name} className="border border-pine/10 rounded-2xl p-7 bg-white">
+      <section className="max-w-4xl mx-auto px-6 pb-4">
+        <WeightLossChart />
+      </section>
+
+      <section className="max-w-4xl mx-auto px-6 py-12 space-y-6">
+        {studies.map((s, i) => (
+          <Reveal key={s.name} delay={i * 100} className="border border-pine/10 rounded-2xl p-7 bg-white">
             <div className="flex flex-wrap items-baseline gap-3">
               <h2 className="font-display text-xl text-pine-800">{s.name}</h2>
               <span className="text-xs text-pine-800/50 uppercase tracking-wide">{s.source}</span>
@@ -63,7 +69,7 @@ export default function Research() {
             <a href={s.href} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block text-sm text-clay font-medium">
               View published study &rarr;
             </a>
-          </div>
+          </Reveal>
         ))}
       </section>
 

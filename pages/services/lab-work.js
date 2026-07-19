@@ -1,6 +1,7 @@
 import Layout from '../../components/Layout';
 import Seo from '../../components/Seo';
 import Link from 'next/link';
+import Icon from '../../components/Icon';
 
 export default function LabWork() {
   return (
@@ -11,6 +12,9 @@ export default function LabWork() {
         path="/services/lab-work/"
       />
       <section className="max-w-4xl mx-auto px-6 pt-16 pb-10">
+        <div className="w-14 h-14 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800 mb-6">
+          <Icon name="labWork" className="w-7 h-7" />
+        </div>
         <p className="eyebrow text-clay mb-4">Lab Work</p>
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
           Every plan starts with data, not a guess.

@@ -1,17 +1,19 @@
 import Layout from '../../components/Layout';
 import Seo from '../../components/Seo';
 import Link from 'next/link';
+import Icon from '../../components/Icon';
+import Reveal from '../../components/Reveal';
 
 const services = [
-  { href: '/services/medical-weight-loss/', title: 'Medical Weight Loss', copy: 'GLP-1 therapy paired with nutrition, hormone, and lifestyle support for weight loss that lasts.' },
-  { href: '/services/hormone-optimization/', title: 'Hormone Optimization', copy: 'Testosterone and hormone therapy for energy, mood, and body composition.' },
-  { href: '/services/nutrition-coaching/', title: 'Nutrition & Coaching', copy: 'A personalized plan and a real coach who checks in as your habits change.' },
+  { href: '/services/medical-weight-loss/', icon: 'weightLoss', title: 'Medical Weight Loss', copy: 'GLP-1 therapy paired with nutrition, hormone, and lifestyle support for weight loss that lasts.' },
+  { href: '/services/hormone-optimization/', icon: 'hormone', title: 'Hormone Optimization', copy: 'Testosterone and hormone therapy for energy, mood, and body composition.' },
+  { href: '/services/nutrition-coaching/', icon: 'nutrition', title: 'Nutrition & Coaching', copy: 'A personalized plan and a real coach who checks in as your habits change.' },
 ];
 
 const additional = [
-  { href: '/services/primary-care/', title: 'Primary Care', copy: 'Routine check-ups, chronic disease management, and preventive medicine.' },
-  { href: '/services/health-screenings/', title: 'Health Screenings', copy: 'Blood pressure, cholesterol, glucose, BMI, and cancer screenings by risk profile.' },
-  { href: '/services/lab-work/', title: 'Lab Work', copy: 'Bloodwork, hormone panels, and genetic/food sensitivity testing through our RUPA partnership.' },
+  { href: '/services/primary-care/', icon: 'primaryCare', title: 'Primary Care', copy: 'Routine check-ups, chronic disease management, and preventive medicine.' },
+  { href: '/services/health-screenings/', icon: 'screening', title: 'Health Screenings', copy: 'Blood pressure, cholesterol, glucose, BMI, and cancer screenings by risk profile.' },
+  { href: '/services/lab-work/', icon: 'labWork', title: 'Lab Work', copy: 'Bloodwork, hormone panels, and genetic/food sensitivity testing through our RUPA partnership.' },
 ];
 
 export default function Services() {
@@ -30,12 +32,17 @@ export default function Services() {
       </section>
 
       <section className="max-w-6xl mx-auto px-6 pb-16 grid md:grid-cols-3 gap-8">
-        {services.map((s) => (
-          <Link key={s.href} href={s.href} className="block border border-pine/10 rounded-2xl p-7 hover:border-clay hover:bg-white transition-colors">
-            <h2 className="font-display text-xl text-pine-800">{s.title}</h2>
-            <p className="mt-3 text-sm leading-relaxed text-pine-800/75">{s.copy}</p>
-            <span className="mt-5 inline-block text-sm text-clay font-medium">Learn more &rarr;</span>
-          </Link>
+        {services.map((s, i) => (
+          <Reveal key={s.href} delay={i * 100}>
+            <Link href={s.href} className="block h-full border border-pine/10 rounded-2xl p-7 hover:border-clay hover:bg-white hover:-translate-y-1 transition-all">
+              <div className="w-12 h-12 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800 mb-5">
+                <Icon name={s.icon} className="w-6 h-6" />
+              </div>
+              <h2 className="font-display text-xl text-pine-800">{s.title}</h2>
+              <p className="mt-3 text-sm leading-relaxed text-pine-800/75">{s.copy}</p>
+              <span className="mt-5 inline-block text-sm text-clay font-medium">Learn more &rarr;</span>
+            </Link>
+          </Reveal>
         ))}
       </section>
 
@@ -44,12 +51,19 @@ export default function Services() {
       <section className="max-w-6xl mx-auto px-6 py-16">
         <p className="eyebrow text-clay mb-4">Also Available In-Clinic</p>
         <div className="grid md:grid-cols-3 gap-10">
-          {additional.map((s) => (
-            <Link key={s.href} href={s.href} className="block hover:opacity-80 transition-opacity">
-              <h3 className="font-display text-lg text-pine-800">{s.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-pine-800/75">{s.copy}</p>
-              <span className="mt-3 inline-block text-sm text-clay font-medium">Learn more &rarr;</span>
-            </Link>
+          {additional.map((s, i) => (
+            <Reveal key={s.href} delay={i * 100}>
+              <Link href={s.href} className="flex gap-4 hover:opacity-80 transition-opacity">
+                <div className="w-10 h-10 shrink-0 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800">
+                  <Icon name={s.icon} className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-display text-lg text-pine-800">{s.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-pine-800/75">{s.copy}</p>
+                  <span className="mt-3 inline-block text-sm text-clay font-medium">Learn more &rarr;</span>
+                </div>
+              </Link>
+            </Reveal>
           ))}
         </div>
       </section>

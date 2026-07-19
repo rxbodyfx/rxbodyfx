@@ -1,6 +1,7 @@
 import Layout from '../../components/Layout';
 import Seo from '../../components/Seo';
 import Link from 'next/link';
+import Icon from '../../components/Icon';
 
 export default function HormoneOptimization() {
   return (
@@ -11,6 +12,9 @@ export default function HormoneOptimization() {
         path="/services/hormone-optimization/"
       />
       <section className="max-w-4xl mx-auto px-6 pt-16 pb-10">
+        <div className="w-14 h-14 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800 mb-6">
+          <Icon name="hormone" className="w-7 h-7" />
+        </div>
         <p className="eyebrow text-clay mb-4">Hormone Optimization</p>
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
           Fatigue and weight gain aren&rsquo;t always about willpower.

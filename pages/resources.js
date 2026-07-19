@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import Link from 'next/link';
+import Reveal from '../components/Reveal';
 
 const guides = [
   { href: '/blog/semaglutide-vs-tirzepatide/', title: 'Semaglutide vs. Tirzepatide', tag: 'Medication Guide' },
@@ -30,12 +31,14 @@ export default function Resources() {
 
       <section className="max-w-4xl mx-auto px-6 py-10">
         <p className="eyebrow text-clay mb-5">Guides</p>
-        <div className="grid md:grid-cols-3 gap-6">
-          {guides.map((g) => (
-            <Link key={g.href} href={g.href} className="block border border-pine/10 rounded-2xl p-6 hover:border-clay hover:bg-white transition-colors">
-              <p className="text-xs text-clay font-semibold uppercase tracking-wide">{g.tag}</p>
-              <h2 className="mt-2 font-display text-lg text-pine-800">{g.title}</h2>
-            </Link>
+        <div className="grid sm:grid-cols-2 gap-6">
+          {guides.map((g, i) => (
+            <Reveal key={g.href} delay={i * 80}>
+              <Link href={g.href} className="block h-full border border-pine/10 rounded-2xl p-6 hover:border-clay hover:bg-white hover:-translate-y-1 transition-all">
+                <p className="text-xs text-clay font-semibold uppercase tracking-wide">{g.tag}</p>
+                <h2 className="mt-2 font-display text-lg text-pine-800">{g.title}</h2>
+              </Link>
+            </Reveal>
           ))}
         </div>
       </section>
@@ -55,14 +58,14 @@ export default function Resources() {
       <section className="max-w-4xl mx-auto px-6 pb-20">
         <p className="eyebrow text-clay mb-5">Reference</p>
         <div className="grid sm:grid-cols-2 gap-6 text-pine-800/80 leading-relaxed">
-          <div className="border border-pine/10 rounded-2xl p-6">
+          <Reveal className="border border-pine/10 rounded-2xl p-6">
             <h3 className="font-display text-lg text-pine-800">Understanding Your Labs</h3>
             <p className="mt-2 text-sm">What bloodwork tells your care team before your plan is built.</p>
-          </div>
-          <div className="border border-pine/10 rounded-2xl p-6">
+          </Reveal>
+          <Reveal delay={80} className="border border-pine/10 rounded-2xl p-6">
             <h3 className="font-display text-lg text-pine-800">The Five Pillars, Explained</h3>
             <p className="mt-2 text-sm">Diet, exercise, nutrition, hormone optimization, and sleep &mdash; how each one factors into your plan.</p>
-          </div>
+          </Reveal>
         </div>
       </section>
     </Layout>
