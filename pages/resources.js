@@ -6,6 +6,7 @@ const guides = [
   { href: '/blog/semaglutide-vs-tirzepatide/', title: 'Semaglutide vs. Tirzepatide', tag: 'Medication Guide' },
   { href: '/blog/remote-patient-monitoring-explained/', title: 'What Is Remote Patient Monitoring?', tag: 'Technology' },
   { href: '/blog/is-telehealth-weight-loss-legitimate/', title: 'Is Telehealth Weight Loss Legitimate?', tag: 'Care Model' },
+  { href: '/research/', title: 'Research & Evidence', tag: 'Clinical Data' },
 ];
 
 export default function Resources() {

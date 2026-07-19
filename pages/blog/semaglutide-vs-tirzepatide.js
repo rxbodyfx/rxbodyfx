@@ -43,6 +43,24 @@ export default function Post() {
             response varies significantly from person to person.
           </p>
 
+          <h2 className="font-display text-2xl text-pine-800 pt-4">What the research shows</h2>
+          <p>
+            In SURMOUNT-5, a head-to-head clinical trial published in the{' '}
+            <em>New England Journal of Medicine</em>, patients on tirzepatide
+            lost an average of about 20% of their body weight over 72 weeks,
+            compared to about 14% for patients on semaglutide. Earlier trials
+            in the STEP and SURMOUNT programs showed similar patterns &mdash;
+            both medications produced clinically meaningful weight loss, with
+            tirzepatide numerically ahead on average in most published
+            studies.
+          </p>
+          <p>
+            Averages don&rsquo;t predict any one person&rsquo;s results, though
+            &mdash; individual response varies based on dose, adherence, and
+            personal biology, which is exactly why lab work and provider
+            oversight matter more than picking a medication off a chart.
+          </p>
+
           <h2 className="font-display text-2xl text-pine-800 pt-4">Which one is right for you?</h2>
           <p>
             There isn&rsquo;t a universal answer &mdash; the right medication
