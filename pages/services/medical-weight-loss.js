@@ -48,6 +48,18 @@ export default function MedicalWeightLoss() {
 
       <div className="rule max-w-4xl mx-auto" />
 
+      <section className="max-w-4xl mx-auto px-6 py-10 bg-white border border-pine/10 rounded-2xl">
+        <div className="p-8">
+          <h2 className="font-display text-2xl text-pine-800">What's included in the Metabolic Reset Program</h2>
+          <ul className="mt-5 space-y-3 text-pine-800/80 leading-relaxed">
+            <li>&middot; Medication cost is fully included in your program &mdash; no hidden fees</li>
+            <li>&middot; No insurance required to enroll</li>
+            <li>&middot; A dedicated nutritionist who gets to know you, not a generic meal plan</li>
+            <li>&middot; Up to a year of access to your personalized medical team</li>
+          </ul>
+        </div>
+      </section>
+
       <section className="max-w-4xl mx-auto px-6 py-10">
         <h2 className="font-display text-2xl text-pine-800">What to expect</h2>
         <ul className="mt-5 space-y-3 text-pine-800/80 leading-relaxed">

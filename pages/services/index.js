@@ -9,9 +9,9 @@ const services = [
 ];
 
 const additional = [
-  { title: 'Primary Care', copy: 'Routine check-ups, chronic disease management, and preventive medicine.' },
-  { title: 'Health Screenings', copy: 'Blood pressure, cholesterol, glucose, BMI, and cancer screenings by risk profile.' },
-  { title: 'Lab Work', copy: 'Bloodwork, hormone panels, and genetic/food sensitivity testing through our RUPA partnership.' },
+  { href: '/services/primary-care/', title: 'Primary Care', copy: 'Routine check-ups, chronic disease management, and preventive medicine.' },
+  { href: '/services/health-screenings/', title: 'Health Screenings', copy: 'Blood pressure, cholesterol, glucose, BMI, and cancer screenings by risk profile.' },
+  { href: '/services/lab-work/', title: 'Lab Work', copy: 'Bloodwork, hormone panels, and genetic/food sensitivity testing through our RUPA partnership.' },
 ];
 
 export default function Services() {
@@ -45,10 +45,11 @@ export default function Services() {
         <p className="eyebrow text-clay mb-4">Also Available In-Clinic</p>
         <div className="grid md:grid-cols-3 gap-10">
           {additional.map((s) => (
-            <div key={s.title}>
+            <Link key={s.href} href={s.href} className="block hover:opacity-80 transition-opacity">
               <h3 className="font-display text-lg text-pine-800">{s.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-pine-800/75">{s.copy}</p>
-            </div>
+              <span className="mt-3 inline-block text-sm text-clay font-medium">Learn more &rarr;</span>
+            </Link>
           ))}
         </div>
       </section>
