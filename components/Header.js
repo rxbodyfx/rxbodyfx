@@ -35,7 +35,12 @@ export default function Header() {
             onMouseEnter={() => setLearnOpen(true)}
             onMouseLeave={() => setLearnOpen(false)}
           >
-            <button className="hover:text-clay transition-colors flex items-center gap-1">
+            <button
+              className="hover:text-clay transition-colors flex items-center gap-1"
+              onClick={() => setLearnOpen((v) => !v)}
+              aria-expanded={learnOpen}
+              aria-haspopup="true"
+            >
               Learn
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
                 <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -45,7 +50,7 @@ export default function Header() {
               <div className="absolute top-full left-0 pt-2 w-56">
                 <div className="bg-white border border-pine/10 rounded-xl shadow-lg overflow-hidden">
                   {learnLinks.map((l) => (
-                    <Link key={l.href} href={l.href} className="block px-4 py-3 text-sm hover:bg-sand transition-colors">
+                    <Link key={l.href} href={l.href} className="block px-4 py-3 text-sm hover:bg-sand transition-colors" onClick={() => setLearnOpen(false)}>
                       {l.label}
                     </Link>
                   ))}

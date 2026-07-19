@@ -42,22 +42,22 @@ export default function Contact() {
           </div>
         </div>
 
-        <form className="bg-white border border-pine/10 rounded-2xl p-8 space-y-4">
+        <form className="bg-white border border-pine/10 rounded-2xl p-8 space-y-4" aria-label="Consultation request form">
           <div>
-            <label className="text-sm font-medium text-pine-800">Full name</label>
-            <input type="text" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand" />
+            <label htmlFor="name" className="text-sm font-medium text-pine-800">Full name</label>
+            <input id="name" name="name" type="text" required autoComplete="name" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand" />
           </div>
           <div>
-            <label className="text-sm font-medium text-pine-800">Email</label>
-            <input type="email" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand" />
+            <label htmlFor="email" className="text-sm font-medium text-pine-800">Email</label>
+            <input id="email" name="email" type="email" required autoComplete="email" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand" />
           </div>
           <div>
-            <label className="text-sm font-medium text-pine-800">Phone</label>
-            <input type="tel" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand" />
+            <label htmlFor="phone" className="text-sm font-medium text-pine-800">Phone</label>
+            <input id="phone" name="phone" type="tel" required autoComplete="tel" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand" />
           </div>
           <div>
-            <label className="text-sm font-medium text-pine-800">What are you interested in?</label>
-            <select className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand">
+            <label htmlFor="interest" className="text-sm font-medium text-pine-800">What are you interested in?</label>
+            <select id="interest" name="interest" className="mt-1.5 w-full border border-pine/20 rounded-lg px-4 py-2.5 bg-sand">
               <option>Medical Weight Loss</option>
               <option>Hormone Optimization</option>
               <option>Nutrition &amp; Coaching</option>
