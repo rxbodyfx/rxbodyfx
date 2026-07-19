@@ -21,6 +21,12 @@ export default function OrgSchema() {
       '@type': 'Country',
       name: 'United States',
     },
+    priceRange: '$$',
+    openingHoursSpecification: [
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday'], opens: '08:30', closes: '17:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Thursday'], opens: '08:30', closes: '18:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Friday'], opens: '08:30', closes: '13:00' },
+    ],
     employee: [
       {
         '@type': 'Person',

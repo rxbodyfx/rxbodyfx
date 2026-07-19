@@ -2,6 +2,7 @@ import Layout from '../../components/Layout';
 import Seo from '../../components/Seo';
 import Link from 'next/link';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import ReviewedBy from '../../components/ReviewedBy';
 import RpmDiagram from '../../components/RpmDiagram';
 
 const jsonLd = {
@@ -11,6 +12,8 @@ const jsonLd = {
   datePublished: '2026-01-15',
   dateModified: '2026-01-15',
   author: { '@type': 'Organization', name: 'RxBODYFx' },
+  reviewedBy: { '@type': 'Person', name: 'Dr. Jack Janoe', jobTitle: 'Supervising Physician' },
+  image: 'https://www.rxbodyfx.com/og-image.png',
 };
 
 export default function Post() {
@@ -28,6 +31,10 @@ export default function Post() {
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
           What Is Remote Patient Monitoring, and How Does It Work?
         </h1>
+
+        <div className="mt-8">
+          <ReviewedBy />
+        </div>
 
         <div className="mt-10 space-y-6 text-pine-800/85 leading-relaxed text-lg">
           <p>

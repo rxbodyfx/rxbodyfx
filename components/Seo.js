@@ -12,6 +12,7 @@ export default function Seo({ title, description, path = '/', jsonLd }) {
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
       <meta property="og:type" content="website" />
+      <meta property="og:locale" content="en_US" />
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />

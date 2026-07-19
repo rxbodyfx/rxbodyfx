@@ -3,6 +3,7 @@ import Seo from '../components/Seo';
 import Link from 'next/link';
 import Reveal from '../components/Reveal';
 import WeightLossChart from '../components/WeightLossChart';
+import ReviewedBy from '../components/ReviewedBy';
 
 const studies = [
   {
@@ -30,6 +31,8 @@ const jsonLd = {
   '@type': 'MedicalWebPage',
   name: 'Research & Evidence on GLP-1 Weight Loss Medications',
   url: 'https://www.rxbodyfx.com/research/',
+  reviewedBy: { '@type': 'Person', name: 'Dr. Jack Janoe', jobTitle: 'Supervising Physician' },
+  lastReviewed: '2026-01-15',
 };
 
 export default function Research() {
@@ -52,6 +55,9 @@ export default function Research() {
           a plain-language summary of what&rsquo;s been published, with links
           to the original research.
         </p>
+        <div className="mt-8 max-w-2xl">
+          <ReviewedBy />
+        </div>
       </section>
 
       <section className="max-w-4xl mx-auto px-6 pb-4">
