@@ -13,6 +13,13 @@ const screenings = [
   { icon: 'screening', label: 'Certain types of cancer', copy: 'Based on age, family history, and risk factors.' },
 ];
 
+const generalGuidance = [
+  { age: '20s\u201330s', copy: 'Blood pressure and cholesterol checks begin, typically at routine visits.' },
+  { age: '40s', copy: 'Mammography typically recommended for women; cardiovascular risk factors get closer attention.' },
+  { age: '45+', copy: 'Colorectal cancer screening typically begins at 45 for average-risk adults, per current USPSTF guidance.' },
+  { age: '50+', copy: 'Screening frequency generally increases across the board as risk factors accumulate with age.' },
+];
+
 export default function HealthScreenings() {
   return (
     <Layout>
@@ -46,6 +53,28 @@ export default function HealthScreenings() {
             <Checklist items={screenings} columns={2} />
           </div>
         </Reveal>
+      </section>
+
+      <div className="rule max-w-4xl mx-auto" />
+
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <Reveal>
+          <p className="eyebrow text-clay mb-4">General Guidance</p>
+          <h2 className="font-display text-2xl text-pine-800 mb-3">What to expect, by decade.</h2>
+          <p className="text-sm text-pine-800/60 mb-8 max-w-2xl">
+            This is general population-level guidance, not a personal
+            recommendation &mdash; your actual schedule depends on your own
+            risk factors and history, which your provider will review with you.
+          </p>
+        </Reveal>
+        <div className="space-y-4">
+          {generalGuidance.map((g, i) => (
+            <Reveal key={g.age} delay={i * 70} className="flex gap-6 items-start border-b border-pine/10 pb-4">
+              <div className="font-display text-lg text-clay w-20 shrink-0">{g.age}</div>
+              <p className="text-pine-800/80 leading-relaxed text-sm">{g.copy}</p>
+            </Reveal>
+          ))}
+        </div>
       </section>
 
       <section className="bg-pine-800 text-sand mt-10">

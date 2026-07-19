@@ -3,6 +3,29 @@ import Seo from '../components/Seo';
 import Link from 'next/link';
 import Icon from '../components/Icon';
 import Reveal from '../components/Reveal';
+import Checklist from '../components/Checklist';
+
+const qualifies = [
+  { icon: 'consult', label: 'Adults across the U.S.', copy: 'Available in all 50 states through Asher Health.' },
+  { icon: 'labWork', label: 'Willing to complete lab work', copy: 'A requirement for medical weight loss and hormone therapy.' },
+  { icon: 'app', label: 'Comfortable with virtual visits', copy: 'Video consultations and app-based tracking.' },
+  { icon: 'provider', label: 'Ready for ongoing care', copy: 'Not a one-time prescription \u2014 a real program.' },
+];
+
+const telehealthFaqs = [
+  {
+    q: 'Do telehealth rules vary by state?',
+    a: 'Yes \u2014 prescribing regulations, required visit types, and pharmacy rules can vary by state. Our team and pharmacy partners work within each state\u2019s requirements as part of enrolling you.',
+  },
+  {
+    q: 'What if I need an in-person visit?',
+    a: 'If your case requires an in-person evaluation, we\u2019ll let you know during your consultation \u2014 patients near Friendswood have that option directly at our clinic.',
+  },
+  {
+    q: 'How fast can I get started?',
+    a: 'After your free consultation, timelines depend on lab scheduling and results \u2014 your care coordinator will walk you through what to expect for your specific situation.',
+  },
+];
 
 const steps = [
   {
@@ -104,6 +127,34 @@ export default function Telehealth() {
             telemedicine visit &mdash; all in one place.
           </p>
         </Reveal>
+      </section>
+
+      <div className="rule max-w-6xl mx-auto" />
+
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <Reveal>
+          <p className="eyebrow text-clay mb-4">Is This For You?</p>
+          <h2 className="font-display text-2xl md:text-3xl text-pine-800 mb-8">Who telehealth care fits best.</h2>
+        </Reveal>
+        <div className="bg-white border border-pine/10 rounded-2xl p-8">
+          <Checklist items={qualifies} columns={2} />
+        </div>
+      </section>
+
+      <div className="rule max-w-6xl mx-auto" />
+
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <Reveal>
+          <h2 className="font-display text-2xl text-pine-800 mb-8">Telehealth-specific questions</h2>
+        </Reveal>
+        <div className="space-y-6 max-w-3xl">
+          {telehealthFaqs.map((f, i) => (
+            <Reveal key={f.q} delay={i * 70} className="border-b border-pine/10 pb-6">
+              <h3 className="font-display text-lg text-pine-800">{f.q}</h3>
+              <p className="mt-2 text-pine-800/75 leading-relaxed text-sm">{f.a}</p>
+            </Reveal>
+          ))}
+        </div>
       </section>
 
       <section className="bg-pine-800 text-sand">

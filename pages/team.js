@@ -84,6 +84,27 @@ export default function Team() {
           </p>
         </Reveal>
       </section>
+
+      <div className="rule max-w-4xl mx-auto" />
+
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <Reveal>
+          <p className="eyebrow text-clay mb-4">Our Values</p>
+          <h2 className="font-display text-2xl text-pine-800 mb-10">What guides how we practice.</h2>
+        </Reveal>
+        <div className="grid md:grid-cols-3 gap-8">
+          {[
+            { title: 'Compassion First', copy: 'Weight and hormone health are personal. We start every relationship with time, not a form.' },
+            { title: 'Evidence Over Trends', copy: 'Our plans follow published clinical research, not whatever\u2019s trending this month.' },
+            { title: 'Real Accountability', copy: 'A coach and provider who actually follow up \u2014 not a subscription you forget about.' },
+          ].map((v, i) => (
+            <Reveal key={v.title} delay={i * 100}>
+              <h3 className="font-display text-lg text-pine-800">{v.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-pine-800/75">{v.copy}</p>
+            </Reveal>
+          ))}
+        </div>
+      </section>
     </Layout>
   );
 }

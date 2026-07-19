@@ -4,6 +4,29 @@ import Link from 'next/link';
 import Icon from '../../components/Icon';
 import Reveal from '../../components/Reveal';
 import CoachingCycle from '../../components/CoachingCycle';
+import Checklist from '../../components/Checklist';
+
+const sessionCovers = [
+  { icon: 'nutrition', label: 'What you\u2019re actually eating', copy: 'Real meals, not an idealized log.' },
+  { icon: 'ongoing', label: 'What\u2019s working and what isn\u2019t', copy: 'Honest review of the past week.' },
+  { icon: 'weightLoss', label: 'Adjustments to your plan', copy: 'Based on progress, not a fixed script.' },
+  { icon: 'app', label: 'Your questions', copy: 'Time to ask what\u2019s actually on your mind.' },
+];
+
+const faqs = [
+  {
+    q: 'How often do I meet with my coach?',
+    a: 'Cadence varies by your plan and stage of the program \u2014 more frequent early on while your plan is being dialed in, then adjusting as your habits stabilize.',
+  },
+  {
+    q: 'Is the plan the same for everyone?',
+    a: 'No. Your coach builds around your food preferences, schedule, culture, and budget \u2014 not a generic template handed to every patient.',
+  },
+  {
+    q: 'What if I fall off track for a while?',
+    a: 'That\u2019s normal and expected. Your coach\u2019s job is to help you get back on track, not to make you feel judged for a rough week.',
+  },
+];
 
 export default function NutritionCoaching() {
   return (
@@ -37,6 +60,18 @@ export default function NutritionCoaching() {
         </Reveal>
       </section>
 
+      <div className="rule max-w-4xl mx-auto" />
+
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <Reveal>
+          <p className="eyebrow text-clay mb-4">In Every Session</p>
+          <h2 className="font-display text-2xl text-pine-800 mb-8">What coaching actually covers.</h2>
+        </Reveal>
+        <div className="bg-white border border-pine/10 rounded-2xl p-8">
+          <Checklist items={sessionCovers} columns={2} />
+        </div>
+      </section>
+
       <section className="max-w-4xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-10">
         <Reveal>
           <h2 className="font-display text-2xl text-pine-800">Personalized Plans</h2>
@@ -54,6 +89,22 @@ export default function NutritionCoaching() {
             time, not at your next quarterly visit.
           </p>
         </Reveal>
+      </section>
+
+      <div className="rule max-w-4xl mx-auto" />
+
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <Reveal>
+          <h2 className="font-display text-2xl text-pine-800 mb-8">Common questions</h2>
+        </Reveal>
+        <div className="space-y-6">
+          {faqs.map((f, i) => (
+            <Reveal key={f.q} delay={i * 70} className="border-b border-pine/10 pb-6">
+              <h3 className="font-display text-lg text-pine-800">{f.q}</h3>
+              <p className="mt-2 text-pine-800/75 leading-relaxed text-sm">{f.a}</p>
+            </Reveal>
+          ))}
+        </div>
       </section>
 
       <section className="bg-pine-800 text-sand mt-10">

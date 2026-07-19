@@ -56,6 +56,17 @@ export default function Post() {
             in-clinic in Friendswood or by telehealth anywhere else in the
             country.
           </p>
+
+          <h2 className="font-display text-2xl text-pine-800 pt-4">Privacy and security</h2>
+          <p>
+            Health data flowing between an app and your care team naturally
+            raises privacy questions, and it&rsquo;s a fair thing to ask about
+            before enrolling anywhere. Your information should be handled
+            according to a clear privacy policy and applicable healthcare
+            privacy law, with encryption and access controls in place. Read
+            our own <Link href="/privacy-policy/" className="text-clay font-medium">Privacy Policy</Link> for the specifics on how we handle
+            your data.
+          </p>
         </div>
 
         <div className="mt-14 bg-pine-800 text-sand rounded-2xl p-10 text-center">

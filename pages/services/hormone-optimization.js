@@ -12,6 +12,28 @@ const symptoms = [
   { icon: 'app', label: 'Reduced drive or focus', copy: 'A noticeable dip from your baseline.' },
 ];
 
+const testingSteps = [
+  { icon: 'consult', label: 'Consultation', copy: 'Discuss your symptoms and history.' },
+  { icon: 'labFlask', label: 'Bloodwork', copy: 'A full hormone panel, not a single number.' },
+  { icon: 'provider', label: 'Provider Review', copy: 'Your results reviewed against your symptoms.' },
+  { icon: 'ongoing', label: 'Plan & Monitoring', copy: 'Treatment starts, then labs are rechecked.' },
+];
+
+const faqs = [
+  {
+    q: 'How often are hormone levels rechecked?',
+    a: 'Typically at set intervals after starting therapy, then periodically once your levels stabilize \u2014 your provider will set a schedule based on your specific treatment.',
+  },
+  {
+    q: 'Is hormone therapy only for men?',
+    a: 'No. We work with both men and women. For men, this often centers on testosterone; for women, hormone shifts around perimenopause and menopause are a common reason for evaluation.',
+  },
+  {
+    q: 'Will this affect my other medications?',
+    a: 'Your provider reviews your full medication list and health history before starting any hormone therapy to check for interactions or contraindications.',
+  },
+];
+
 export default function HormoneOptimization() {
   return (
     <Layout>
@@ -48,23 +70,74 @@ export default function HormoneOptimization() {
         </Reveal>
       </section>
 
-      <section className="max-w-4xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-10">
+      <div className="rule max-w-4xl mx-auto" />
+
+      <section className="max-w-4xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10">
+        <Reveal className="border border-pine/10 rounded-2xl p-7 bg-white">
+          <h2 className="font-display text-xl text-pine-800">For Men</h2>
+          <p className="mt-3 text-sm leading-relaxed text-pine-800/75">
+            Testosterone replacement therapy for patients with clinically low
+            levels, addressing energy, muscle mass, mood, and libido, with
+            regular lab monitoring to keep levels in a safe, effective range.
+          </p>
+        </Reveal>
+        <Reveal delay={100} className="border border-pine/10 rounded-2xl p-7 bg-white">
+          <h2 className="font-display text-xl text-pine-800">For Women</h2>
+          <p className="mt-3 text-sm leading-relaxed text-pine-800/75">
+            Hormone evaluation and support around perimenopause and menopause,
+            and other hormone-related shifts affecting weight, mood, sleep, and
+            energy &mdash; individualized to your labs and stage of life.
+          </p>
+        </Reveal>
+      </section>
+
+      <div className="rule max-w-4xl mx-auto" />
+
+      <section className="max-w-4xl mx-auto px-6 py-16">
         <Reveal>
-          <h2 className="font-display text-2xl text-pine-800">Testosterone Therapy</h2>
-          <p className="mt-3 leading-relaxed text-pine-800/80">
-            For patients with clinically low testosterone, we manage
-            replacement therapy with regular lab monitoring to keep levels in
-            a safe, effective range.
-          </p>
+          <p className="eyebrow text-clay mb-4">The Process</p>
+          <h2 className="font-display text-2xl text-pine-800 mb-8">From symptoms to a treatment plan.</h2>
         </Reveal>
-        <Reveal delay={100}>
-          <h2 className="font-display text-2xl text-pine-800">Whole-Body Approach</h2>
-          <p className="mt-3 leading-relaxed text-pine-800/80">
-            Hormone therapy works best alongside the same five pillars behind
-            our weight loss program &mdash; sleep, nutrition, and stress
-            management all affect hormone levels too.
-          </p>
+        <div className="bg-white border border-pine/10 rounded-2xl p-6 sm:p-8">
+          <div className="flex flex-col sm:flex-row sm:items-start">
+            {testingSteps.map((s, i) => (
+              <div key={s.label} className="flex sm:flex-1">
+                <div className="flex sm:flex-col items-center sm:text-center gap-4 sm:gap-3 py-3 sm:py-0">
+                  <div className="w-14 h-14 shrink-0 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800">
+                    <Icon name={s.icon} className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="font-display text-sm text-pine-800">{s.label}</p>
+                    <p className="text-xs text-pine-800/60 mt-1 max-w-[9rem] sm:mx-auto">{s.copy}</p>
+                  </div>
+                </div>
+                {i < testingSteps.length - 1 && (
+                  <div className="hidden sm:flex items-center justify-center flex-1 pt-6 text-clay/50" aria-hidden="true">
+                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none">
+                      <path d="M0 6h22M18 1l6 5-6 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="rule max-w-4xl mx-auto" />
+
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <Reveal>
+          <h2 className="font-display text-2xl text-pine-800 mb-8">Common questions</h2>
         </Reveal>
+        <div className="space-y-6">
+          {faqs.map((f, i) => (
+            <Reveal key={f.q} delay={i * 70} className="border-b border-pine/10 pb-6">
+              <h3 className="font-display text-lg text-pine-800">{f.q}</h3>
+              <p className="mt-2 text-pine-800/75 leading-relaxed text-sm">{f.a}</p>
+            </Reveal>
+          ))}
+        </div>
       </section>
 
       <section className="bg-pine-800 text-sand mt-10">

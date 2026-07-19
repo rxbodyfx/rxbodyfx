@@ -74,6 +74,26 @@ export default function Post() {
             builds every plan around bloodwork and a licensed provider&rsquo;s
             review, rather than defaulting to one medication for everyone.
           </p>
+
+          <h2 className="font-display text-2xl text-pine-800 pt-4">What determines your dose</h2>
+          <p>
+            Both medications are started at a low dose and increased gradually
+            over weeks, following the same titration schedules used in the
+            clinical trials. This gradual approach is designed to let your
+            body adjust and to minimize side effects &mdash; it&rsquo;s not
+            something your provider skips to get to results faster.
+          </p>
+
+          <h2 className="font-display text-2xl text-pine-800 pt-4">Common side effects</h2>
+          <p>
+            Both medications commonly cause temporary digestive symptoms
+            &mdash; nausea, constipation, or reduced appetite &mdash; especially
+            during the first few weeks or after a dose increase. These
+            typically ease as your body adjusts. Your care team monitors for
+            this at every check-in, and can slow your titration schedule if
+            needed. This is general education, not medical advice specific to
+            you &mdash; always discuss any symptoms with your own provider.
+          </p>
         </div>
 
         <div className="mt-14 bg-pine-800 text-sand rounded-2xl p-10 text-center">

@@ -19,6 +19,33 @@ const expect = [
   { icon: 'telehealth', label: 'Ongoing coaching', copy: 'In-person or by telehealth, on your schedule.' },
 ];
 
+const pillars = [
+  { title: 'Diet', copy: 'What you eat, built around your preferences and schedule, not a rigid template.' },
+  { title: 'Exercise', copy: 'Movement that fits your current ability and builds from there.' },
+  { title: 'Nutrition', copy: 'Beyond calories: micronutrients, hydration, and how your body actually uses food.' },
+  { title: 'Hormone Optimization', copy: 'Because hormone imbalance can undercut even a well-run plan.' },
+  { title: 'Sleep', copy: 'Poor sleep drives hunger hormones and undermines everything else on this list.' },
+];
+
+const faqs = [
+  {
+    q: 'Are results guaranteed?',
+    a: 'No program can ethically guarantee weight loss outcomes, and we won\u2019t tell you otherwise. Published clinical trials show strong average results for GLP-1 medications, but your own results depend on your biology, adherence, and health history.',
+  },
+  {
+    q: 'How is my medication dose decided?',
+    a: 'Your provider starts at a conservative dose and adjusts gradually based on your response and any side effects, following standard titration practices used in the published clinical trials.',
+  },
+  {
+    q: 'What if I have side effects?',
+    a: 'GLP-1 medications commonly cause temporary digestive symptoms as your body adjusts. Your care team monitors this at every check-in and can adjust your plan accordingly \u2014 reach out any time between visits through the app.',
+  },
+  {
+    q: 'Can I switch between medical and non-medical paths?',
+    a: 'Yes. Your plan isn\u2019t locked in permanently. If your labs, goals, or preferences change, your provider can adjust your path at a follow-up visit.',
+  },
+];
+
 export default function MedicalWeightLoss() {
   return (
     <Layout>
@@ -70,7 +97,25 @@ export default function MedicalWeightLoss() {
 
       <div className="rule max-w-4xl mx-auto" />
 
-      <section className="max-w-4xl mx-auto px-6 py-14">
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <Reveal>
+          <p className="eyebrow text-clay mb-4">The Framework</p>
+          <h2 className="font-display text-2xl md:text-3xl text-pine-800 mb-8">Every plan touches all five pillars.</h2>
+        </Reveal>
+        <div className="grid sm:grid-cols-2 gap-6">
+          {pillars.map((p, i) => (
+            <Reveal key={p.title} delay={i * 70} className="border border-pine/10 rounded-2xl p-6 bg-white">
+              <p className="eyebrow text-clay mb-2">0{i + 1}</p>
+              <h3 className="font-display text-lg text-pine-800">{p.title}</h3>
+              <p className="mt-2 text-sm text-pine-800/75 leading-relaxed">{p.copy}</p>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <div className="rule max-w-4xl mx-auto" />
+
+      <section className="max-w-4xl mx-auto px-6 py-16">
         <Reveal>
           <div className="bg-white border border-pine/10 rounded-2xl p-8">
             <h2 className="font-display text-2xl text-pine-800 mb-6">What&rsquo;s included in the Metabolic Reset Program</h2>
@@ -84,6 +129,23 @@ export default function MedicalWeightLoss() {
           <h2 className="font-display text-2xl text-pine-800 mb-6">What to expect</h2>
           <Checklist items={expect} columns={2} />
         </Reveal>
+      </section>
+
+      <div className="rule max-w-4xl mx-auto" />
+
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <Reveal>
+          <p className="eyebrow text-clay mb-4">Common Questions</p>
+          <h2 className="font-display text-2xl text-pine-800 mb-8">About this program specifically</h2>
+        </Reveal>
+        <div className="space-y-6">
+          {faqs.map((f, i) => (
+            <Reveal key={f.q} delay={i * 70} className="border-b border-pine/10 pb-6">
+              <h3 className="font-display text-lg text-pine-800">{f.q}</h3>
+              <p className="mt-2 text-pine-800/75 leading-relaxed text-sm">{f.a}</p>
+            </Reveal>
+          ))}
+        </div>
       </section>
 
       <section className="bg-pine-800 text-sand mt-10">

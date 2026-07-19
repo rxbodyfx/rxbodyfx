@@ -85,16 +85,40 @@ export default function Research() {
       <div className="rule max-w-4xl mx-auto" />
 
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <h2 className="font-display text-2xl text-pine-800 mb-4">How this research applies to your plan</h2>
-        <p className="text-pine-800/80 leading-relaxed max-w-2xl">
-          Trial averages tell you what&rsquo;s possible, not what will happen
-          to you specifically. That&rsquo;s why every RxBODYFx plan starts
-          with your own labs and history, reviewed by a licensed provider,
-          before any medication decision is made.
-        </p>
-        <Link href="/services/medical-weight-loss/" className="mt-6 inline-block text-clay font-medium">
-          See how our program works &rarr;
-        </Link>
+        <Reveal>
+          <p className="eyebrow text-clay mb-4">Understanding the Terms</p>
+          <h2 className="font-display text-2xl text-pine-800 mb-8">A short glossary.</h2>
+        </Reveal>
+        <div className="grid sm:grid-cols-2 gap-6">
+          {[
+            { term: 'GLP-1', def: 'Glucagon-like peptide-1, a hormone your body makes naturally that signals fullness and slows digestion.' },
+            { term: 'GIP', def: 'Glucose-dependent insulinotropic polypeptide, a second hormone pathway that tirzepatide targets alongside GLP-1.' },
+            { term: 'Receptor Agonist', def: 'A medication that mimics a natural hormone by activating the same receptors in the body.' },
+            { term: 'Head-to-Head Trial', def: 'A study that directly compares two treatments against each other, rather than each against a placebo separately.' },
+          ].map((g, i) => (
+            <Reveal key={g.term} delay={i * 70} className="border border-pine/10 rounded-2xl p-6 bg-white">
+              <h3 className="font-display text-lg text-pine-800">{g.term}</h3>
+              <p className="mt-2 text-sm text-pine-800/75 leading-relaxed">{g.def}</p>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <div className="rule max-w-4xl mx-auto" />
+
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <Reveal>
+          <h2 className="font-display text-2xl text-pine-800 mb-4">How this applies to your plan</h2>
+          <p className="text-pine-800/80 leading-relaxed max-w-2xl">
+            Trial averages tell you what&rsquo;s possible, not what will happen
+            to you specifically. That&rsquo;s why every RxBODYFx plan starts
+            with your own labs and history, reviewed by a licensed provider,
+            before any medication decision is made.
+          </p>
+          <Link href="/services/medical-weight-loss/" className="mt-6 inline-block text-clay font-medium">
+            See how our program works &rarr;
+          </Link>
+        </Reveal>
       </section>
     </Layout>
   );

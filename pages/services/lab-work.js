@@ -5,9 +5,24 @@ import Icon from '../../components/Icon';
 import Reveal from '../../components/Reveal';
 
 const categories = [
-  { icon: 'labWork', title: 'Bloodwork', copy: 'Metabolic and hormone panels that establish your baseline before any treatment begins.' },
-  { icon: 'hormone', title: 'Genetic Testing', copy: 'Insight into how your body processes nutrients and responds to certain treatments.' },
-  { icon: 'nutrition', title: 'Food Sensitivity Testing', copy: 'Identify foods that may be working against your nutrition and weight goals.' },
+  {
+    icon: 'labWork',
+    title: 'Bloodwork',
+    copy: 'Metabolic and hormone panels that establish your baseline before any treatment begins.',
+    detail: 'This typically includes markers like blood glucose, lipid panels, thyroid function, and relevant hormone levels, depending on which program you\u2019re enrolling in.',
+  },
+  {
+    icon: 'hormone',
+    title: 'Genetic Testing',
+    copy: 'Insight into how your body processes nutrients and responds to certain treatments.',
+    detail: 'Genetic testing can reveal predispositions that inform how your provider approaches your plan, though it\u2019s one input among several, not a standalone diagnosis.',
+  },
+  {
+    icon: 'nutrition',
+    title: 'Food Sensitivity Testing',
+    copy: 'Identify foods that may be working against your nutrition and weight goals.',
+    detail: 'Results feed directly into the plan your nutrition coach builds, so recommendations are based on your actual physiology, not general dietary trends.',
+  },
 ];
 
 export default function LabWork() {
@@ -37,16 +52,35 @@ export default function LabWork() {
         </Reveal>
       </section>
 
-      <section className="max-w-4xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-6">
+      <section className="max-w-4xl mx-auto px-6 py-10 space-y-6">
         {categories.map((c, i) => (
-          <Reveal key={c.title} delay={i * 100} className="bg-white border border-pine/10 rounded-2xl p-6">
-            <div className="w-11 h-11 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800 mb-4">
-              <Icon name={c.icon} className="w-5 h-5" />
+          <Reveal key={c.title} delay={i * 100} className="bg-white border border-pine/10 rounded-2xl p-7">
+            <div className="flex items-start gap-4">
+              <div className="w-11 h-11 shrink-0 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800">
+                <Icon name={c.icon} className="w-5 h-5" />
+              </div>
+              <div>
+                <h2 className="font-display text-lg text-pine-800">{c.title}</h2>
+                <p className="mt-2 text-sm leading-relaxed text-pine-800/75">{c.copy}</p>
+                <p className="mt-2 text-sm leading-relaxed text-pine-800/60">{c.detail}</p>
+              </div>
             </div>
-            <h2 className="font-display text-lg text-pine-800">{c.title}</h2>
-            <p className="mt-2 text-sm leading-relaxed text-pine-800/75">{c.copy}</p>
           </Reveal>
         ))}
+      </section>
+
+      <div className="rule max-w-4xl mx-auto" />
+
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <Reveal>
+          <h2 className="font-display text-2xl text-pine-800 mb-4">Why RUPA</h2>
+          <p className="text-pine-800/80 leading-relaxed max-w-2xl">
+            Our lab partnership with RUPA gives us access to a broad testing
+            menu without the delays of coordinating multiple separate
+            vendors &mdash; meaning your results get back to your provider
+            faster, and your plan can be built or adjusted sooner.
+          </p>
+        </Reveal>
       </section>
 
       <section className="bg-pine-800 text-sand mt-10">

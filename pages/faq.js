@@ -24,6 +24,30 @@ const faqs = [
     q: 'Is my information kept private?',
     a: 'Yes. Your health information is handled according to our Privacy Policy and applicable healthcare privacy law.',
   },
+  {
+    q: 'How long does the program typically run?',
+    a: 'The Metabolic Reset Program includes up to a year of access to your care team, though individual treatment length depends on your goals and how your provider adjusts your plan over time.',
+  },
+  {
+    q: 'Do you accept insurance?',
+    a: 'No insurance is required to enroll \u2014 the program is structured as a cash-pay model with medication cost included, so there\u2019s no separate insurance approval process to navigate.',
+  },
+  {
+    q: 'Who is this program not a good fit for?',
+    a: 'Patients with certain medical conditions or contraindications to GLP-1 therapy may not be candidates for the medical path \u2014 this is exactly what the initial consultation and labs are for, and non-medical options remain available regardless.',
+  },
+  {
+    q: 'Can I do telehealth in every state?',
+    a: 'Coverage is available in all 50 states through our partnership with Asher Health, though specific prescribing rules and pharmacy logistics can vary by state.',
+  },
+  {
+    q: 'What happens after my free consultation?',
+    a: 'If you move forward, next steps are lab work (in-clinic or through a local partner lab) followed by your provider building a plan based on your results and history.',
+  },
+  {
+    q: 'Can I switch between in-person and telehealth care?',
+    a: 'Yes, if your circumstances change \u2014 for example, patients near Friendswood can move between in-clinic visits and telehealth check-ins as it fits their schedule.',
+  },
 ];
 
 const jsonLd = {

@@ -47,6 +47,17 @@ export default function Post() {
             case, and a dedicated nutritionist and care team throughout your
             program.
           </p>
+
+          <h2 className="font-display text-2xl text-pine-800 pt-4">The regulatory landscape</h2>
+          <p>
+            Telehealth prescribing rules aren&rsquo;t identical from state to
+            state &mdash; requirements around visit type, pharmacy licensing,
+            and controlled substance prescribing can vary. A program built to
+            operate nationally should have infrastructure that accounts for
+            this rather than treating every state the same, which is part of
+            why we work through an established partner network rather than
+            trying to navigate fifty separate sets of rules alone.
+          </p>
         </div>
 
         <div className="mt-14 bg-pine-800 text-sand rounded-2xl p-10 text-center">
