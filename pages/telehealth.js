@@ -70,7 +70,7 @@ export default function Telehealth() {
 
       <div className="rule max-w-6xl mx-auto" />
 
-      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-14">
+      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 md:gap-14">
         <div>
           <h2 className="font-display text-2xl text-pine-800">Why hybrid care matters</h2>
           <p className="mt-4 leading-relaxed text-pine-800/80">

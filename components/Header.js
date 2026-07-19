@@ -20,8 +20,8 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-sand/95 backdrop-blur border-b border-pine/10">
-      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-20">
-        <Link href="/" className="font-display text-xl tracking-tight text-pine-800">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-[72px] md:h-20">
+        <Link href="/" className="font-display text-lg sm:text-xl tracking-tight text-pine-800 shrink-0">
           RxBODY<span className="text-clay">Fx</span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 font-body text-sm">
@@ -66,24 +66,39 @@ export default function Header() {
           </Link>
         </nav>
         <button
-          className="md:hidden text-pine-800"
+          className="md:hidden -mr-2 p-2.5 text-pine-800"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
           aria-expanded={open}
         >
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            {open ? (
+              <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+            ) : (
+              <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+            )}
           </svg>
         </button>
       </div>
       {open && (
-        <nav className="md:hidden flex flex-col gap-1 px-6 pb-6 font-body text-sm">
-          {[...primaryLinks, ...learnLinks].map((l) => (
-            <Link key={l.href} href={l.href} className="py-2 border-b border-pine/10" onClick={() => setOpen(false)}>
+        <nav className="md:hidden flex flex-col px-4 sm:px-6 pb-5 font-body text-base max-h-[calc(100vh-72px)] overflow-y-auto">
+          <p className="eyebrow text-clay pt-3 pb-1">Care</p>
+          {primaryLinks.map((l) => (
+            <Link key={l.href} href={l.href} className="py-3 border-b border-pine/10 min-h-[44px] flex items-center" onClick={() => setOpen(false)}>
               {l.label}
             </Link>
           ))}
-          <Link href="/contact/" className="mt-3 bg-pine-800 text-sand text-center px-5 py-3 rounded-full">
+          <p className="eyebrow text-clay pt-4 pb-1">Learn</p>
+          {learnLinks.map((l) => (
+            <Link key={l.href} href={l.href} className="py-3 border-b border-pine/10 min-h-[44px] flex items-center" onClick={() => setOpen(false)}>
+              {l.label}
+            </Link>
+          ))}
+          <Link
+            href="/contact/"
+            className="mt-5 mb-2 bg-pine-800 text-sand text-center px-5 py-3.5 rounded-full min-h-[48px] flex items-center justify-center"
+            onClick={() => setOpen(false)}
+          >
             Start Your Consult
           </Link>
         </nav>

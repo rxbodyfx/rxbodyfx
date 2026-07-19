@@ -9,7 +9,7 @@ const pillars = [
 export default function FivePillars() {
   const r = 150;
   return (
-    <div className="relative w-[320px] h-[320px] md:w-[380px] md:h-[380px] mx-auto">
+    <div className="relative w-[78vw] max-w-[320px] md:max-w-[380px] aspect-square mx-auto">
       <svg viewBox="0 0 380 380" className="w-full h-full pillar-orbit" aria-hidden="true">
         <circle cx="190" cy="190" r={r} fill="none" stroke="#1F3F3A" strokeOpacity="0.15" strokeWidth="1" />
         {pillars.map((p) => {

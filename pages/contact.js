@@ -9,7 +9,7 @@ export default function Contact() {
         description="Book your free consultation with RxBODYFx. Call, message, or request an appointment online &mdash; in Friendswood, TX or nationwide by telehealth."
         path="/contact/"
       />
-      <section className="max-w-4xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-14">
+      <section className="max-w-4xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-10 md:gap-14">
         <div>
           <p className="eyebrow text-clay mb-4">Get Started</p>
           <h1 className="font-display text-4xl text-pine-800 leading-tight">

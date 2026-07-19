@@ -6,11 +6,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #FAF7F1;
   color: #1F3F3A;
+  overflow-x: hidden;
 }
 
 .eyebrow {

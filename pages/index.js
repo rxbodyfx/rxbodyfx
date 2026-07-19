@@ -31,7 +31,7 @@ export default function Home() {
       />
 
       {/* Hero */}
-      <section className="max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-14 items-center">
+      <section className="max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
         <div>
           <p className="eyebrow text-clay mb-5">Physician-Led &middot; In-Person + Telehealth</p>
           <h1 className="font-display text-4xl md:text-6xl leading-[1.05] text-pine-800">
@@ -57,7 +57,7 @@ export default function Home() {
       <div className="rule max-w-6xl mx-auto" />
 
       {/* Care model */}
-      <section className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-14">
+      <section className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 md:gap-14">
         <div>
           <p className="eyebrow text-clay mb-4">In Friendswood, Texas</p>
           <h2 className="font-display text-3xl text-pine-800">In-person care, done right.</h2>
