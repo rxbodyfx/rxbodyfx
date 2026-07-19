@@ -20,13 +20,13 @@ const team = [
     name: 'James Hethcox',
     role: 'Chief Operating Officer',
     photo: '/team/james-hethcox.jpg',
-    bio: "A 20-year veteran of the U.S. Army, still actively serving at Ellington Field in Houston. Former U.S. Army aviator and CID Special Agent, with a bachelor's degree in Anthropology from the University of Alabama at Birmingham.",
+    bio: "A 20-year veteran of the U.S. Army, still actively serving at Ellington Field in Houston. Former U.S. Army aviator and CID Special Agent, with a bachelor\u2019s degree in Anthropology from the University of Alabama at Birmingham.",
   },
   {
     name: 'Diana Pena',
     role: 'Clinic Manager',
     photo: '/team/diana-pena.jpg',
-    bio: "Earned her Master's degree from Sam Houston State University and her Bachelor's from the University of Houston, Clear Lake. Keeps the clinic running for every patient who walks through the door.",
+    bio: "Earned her Master\u2019s degree from Sam Houston State University and her Bachelor\u2019s from the University of Houston, Clear Lake. Keeps the clinic running for every patient who walks through the door.",
   },
 ];
 

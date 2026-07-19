@@ -53,7 +53,7 @@ const sections = [
     ],
   },
   {
-    title: "7. Children's Privacy",
+    title: '7. Children\u2019s Privacy',
     body: [
       'Our services are not directed to children under the age of 18, and we do not knowingly collect personal data from children. If we learn we have collected personal information from a child under 18, we will take steps to delete that information.',
     ],

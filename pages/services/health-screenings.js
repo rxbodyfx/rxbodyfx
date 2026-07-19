@@ -81,7 +81,7 @@ export default function HealthScreenings() {
 
       <section className="bg-pine-800 text-sand mt-10">
         <div className="max-w-4xl mx-auto px-6 py-14 text-center">
-          <h2 className="font-display text-2xl md:text-3xl">Find out which screenings you're due for.</h2>
+          <h2 className="font-display text-2xl md:text-3xl">Find out which screenings you&rsquo;re due for.</h2>
           <Link href="/contact/" className="mt-7 inline-block bg-clay text-pine-900 px-8 py-3.5 rounded-full font-medium hover:bg-sand transition-colors">
             Book a Free Consultation
           </Link>
