@@ -44,7 +44,7 @@ export default function FivePillars() {
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center bg-sand w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-pine/15 flex flex-col items-center justify-center shadow-sm">
           <span className="font-display text-xl sm:text-2xl text-pine-800 leading-none">5</span>
-          <span className="eyebrow text-clay mt-1 text-[9px] sm:text-[10px]">Pillars</span>
+          <span className="eyebrow text-clay-dark mt-1 text-[9px] sm:text-[10px]">Pillars</span>
         </div>
       </div>
     </div>

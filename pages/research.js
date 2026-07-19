@@ -47,7 +47,7 @@ export default function Research() {
         jsonLd={jsonLd}
       />
       <section className="max-w-4xl mx-auto px-6 pt-16 pb-12">
-        <p className="eyebrow text-clay mb-4">Research & Evidence</p>
+        <p className="eyebrow text-clay-dark mb-4">Research & Evidence</p>
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
           We don&rsquo;t ask you to take our word for it.
         </h1>
@@ -80,7 +80,7 @@ export default function Research() {
               <span className="text-xs text-pine-800/50 uppercase tracking-wide">{s.source}</span>
             </div>
             <p className="mt-3 text-pine-800/80 leading-relaxed">{s.finding}</p>
-            <a href={s.href} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block text-sm text-clay font-medium">
+            <a href={s.href} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block text-sm text-clay-dark font-medium">
               View published study &rarr;
             </a>
           </Reveal>
@@ -100,7 +100,7 @@ export default function Research() {
 
       <section className="max-w-4xl mx-auto px-6 py-16">
         <Reveal>
-          <p className="eyebrow text-clay mb-4">Understanding the Terms</p>
+          <p className="eyebrow text-clay-dark mb-4">Understanding the Terms</p>
           <h2 className="font-display text-2xl text-pine-800 mb-8">A short glossary.</h2>
         </Reveal>
         <div className="grid sm:grid-cols-2 gap-6">
@@ -122,7 +122,7 @@ export default function Research() {
 
       <section className="max-w-4xl mx-auto px-6 py-16">
         <Reveal>
-          <p className="eyebrow text-clay mb-4">Beyond Our Own Program</p>
+          <p className="eyebrow text-clay-dark mb-4">Beyond Our Own Program</p>
           <h2 className="font-display text-2xl text-pine-800 mb-3">Trusted voices in obesity medicine.</h2>
           <p className="text-pine-800/70 leading-relaxed max-w-2xl mb-8">
             We don&rsquo;t expect you to rely on RxBODYFx alone as a source
@@ -138,7 +138,7 @@ export default function Research() {
 
       <section className="max-w-4xl mx-auto px-6 py-16">
         <Reveal>
-          <p className="eyebrow text-clay mb-4">Patient Stories</p>
+          <p className="eyebrow text-clay-dark mb-4">Patient Stories</p>
           <h2 className="font-display text-2xl text-pine-800 mb-3">Real experience, not just trial data.</h2>
           <div className="border border-dashed border-pine/25 rounded-2xl p-10 text-center mt-6">
             <p className="text-pine-800/70 leading-relaxed max-w-md mx-auto">
@@ -160,7 +160,7 @@ export default function Research() {
             with your own labs and history, reviewed by a licensed provider,
             before any medication decision is made.
           </p>
-          <Link href="/services/medical-weight-loss/" className="mt-6 inline-block text-clay font-medium">
+          <Link href="/services/medical-weight-loss/" className="mt-6 inline-block text-clay-dark font-medium">
             See how our program works &rarr;
           </Link>
         </Reveal>

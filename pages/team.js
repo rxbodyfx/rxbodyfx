@@ -39,7 +39,7 @@ export default function Team() {
         path="/team/"
       />
       <section className="max-w-4xl mx-auto px-6 pt-16 pb-12">
-        <p className="eyebrow text-clay mb-4">Our Team</p>
+        <p className="eyebrow text-clay-dark mb-4">Our Team</p>
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
           Led by clinicians, not a checkout page.
         </h1>
@@ -58,7 +58,7 @@ export default function Team() {
             </div>
             <div className="p-7">
               <h2 className="font-display text-xl text-pine-800">{t.name}</h2>
-              <p className="eyebrow text-clay mt-1 mb-3">{t.role}</p>
+              <p className="eyebrow text-clay-dark mt-1 mb-3">{t.role}</p>
               <p className="text-sm leading-relaxed text-pine-800/75">{t.bio}</p>
             </div>
           </Reveal>
@@ -89,7 +89,7 @@ export default function Team() {
 
       <section className="max-w-4xl mx-auto px-6 py-16">
         <Reveal>
-          <p className="eyebrow text-clay mb-4">Our Values</p>
+          <p className="eyebrow text-clay-dark mb-4">Our Values</p>
           <h2 className="font-display text-2xl text-pine-800 mb-10">What guides how we practice.</h2>
         </Reveal>
         <div className="grid md:grid-cols-3 gap-8">

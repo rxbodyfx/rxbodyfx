@@ -35,7 +35,7 @@ export default function HealthScreenings() {
           <div className="w-14 h-14 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800 mb-6">
             <Icon name="screening" className="w-7 h-7" />
           </div>
-          <p className="eyebrow text-clay mb-4">Health Screenings</p>
+          <p className="eyebrow text-clay-dark mb-4">Health Screenings</p>
           <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
             Catch it before it becomes a symptom.
           </h1>
@@ -61,7 +61,7 @@ export default function HealthScreenings() {
 
       <section className="max-w-4xl mx-auto px-6 py-16">
         <Reveal>
-          <p className="eyebrow text-clay mb-4">General Guidance</p>
+          <p className="eyebrow text-clay-dark mb-4">General Guidance</p>
           <h2 className="font-display text-2xl text-pine-800 mb-3">What to expect, by decade.</h2>
           <p className="text-sm text-pine-800/60 mb-8 max-w-2xl">
             This is general population-level guidance, not a personal
@@ -72,7 +72,7 @@ export default function HealthScreenings() {
         <div className="space-y-4">
           {generalGuidance.map((g, i) => (
             <Reveal key={g.age} delay={i * 70} className="flex gap-6 items-start border-b border-pine/10 pb-4">
-              <div className="font-display text-lg text-clay w-20 shrink-0">{g.age}</div>
+              <div className="font-display text-lg text-clay-dark w-20 shrink-0">{g.age}</div>
               <p className="text-pine-800/80 leading-relaxed text-sm">{g.copy}</p>
             </Reveal>
           ))}

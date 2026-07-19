@@ -10,7 +10,7 @@ const stats = [
 export default function StatDashboard() {
   return (
     <div className="bg-white border border-pine/10 rounded-2xl p-8">
-      <p className="eyebrow text-clay mb-1">National Snapshot</p>
+      <p className="eyebrow text-clay-dark mb-1">National Snapshot</p>
       <h2 className="font-display text-xl text-pine-800 mb-6">Obesity in the U.S., by the numbers</h2>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
         {stats.map((s, i) => (
@@ -25,7 +25,7 @@ export default function StatDashboard() {
         href="https://www.cdc.gov/obesity/data-and-statistics/index.html"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-6 inline-block text-sm text-clay font-medium"
+        className="mt-6 inline-block text-sm text-clay-dark font-medium"
       >
         View full CDC data &rarr;
       </a>

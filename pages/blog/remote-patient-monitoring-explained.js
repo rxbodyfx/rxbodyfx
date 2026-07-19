@@ -27,7 +27,7 @@ export default function Post() {
       />
       <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog/' }, { label: 'What Is Remote Patient Monitoring?', href: '/blog/remote-patient-monitoring-explained/' }]} />
       <article className="max-w-3xl mx-auto px-6 pt-16 pb-24">
-        <p className="eyebrow text-clay mb-4">January 2026</p>
+        <p className="eyebrow text-clay-dark mb-4">January 2026</p>
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
           What Is Remote Patient Monitoring, and How Does It Work?
         </h1>
@@ -83,7 +83,7 @@ export default function Post() {
             before enrolling anywhere. Your information should be handled
             according to a clear privacy policy and applicable healthcare
             privacy law, with encryption and access controls in place. Read
-            our own <Link href="/privacy-policy/" className="text-clay font-medium">Privacy Policy</Link> for the specifics on how we handle
+            our own <Link href="/privacy-policy/" className="text-clay-dark font-medium">Privacy Policy</Link> for the specifics on how we handle
             your data.
           </p>
         </div>

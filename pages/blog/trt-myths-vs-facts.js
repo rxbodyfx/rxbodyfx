@@ -45,7 +45,7 @@ export default function Post() {
       />
       <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog/' }, { label: 'TRT Myths vs. Facts', href: '/blog/trt-myths-vs-facts/' }]} />
       <article className="max-w-3xl mx-auto px-6 pt-16 pb-24">
-        <p className="eyebrow text-clay mb-4">January 2026</p>
+        <p className="eyebrow text-clay-dark mb-4">January 2026</p>
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
           Testosterone Replacement Therapy: Myths vs. Facts
         </h1>
@@ -63,7 +63,7 @@ export default function Post() {
         <div className="space-y-6">
           {items.map((item) => (
             <div key={item.myth} className="bg-white border border-pine/10 rounded-2xl p-7">
-              <p className="text-xs text-clay font-semibold uppercase tracking-wide">Myth</p>
+              <p className="text-xs text-clay-dark font-semibold uppercase tracking-wide">Myth</p>
               <p className="mt-1 font-display text-lg text-pine-800">{item.myth}</p>
               <p className="mt-4 text-xs text-pine-800/50 font-semibold uppercase tracking-wide">Fact</p>
               <p className="mt-1 text-pine-800/80 leading-relaxed">{item.fact}</p>

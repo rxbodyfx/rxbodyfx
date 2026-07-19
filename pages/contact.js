@@ -12,7 +12,7 @@ export default function Contact() {
       />
       <section className="max-w-4xl mx-auto px-6 pt-16 pb-10 grid md:grid-cols-2 gap-10 md:gap-14">
         <Reveal>
-          <p className="eyebrow text-clay mb-4">Get Started</p>
+          <p className="eyebrow text-clay-dark mb-4">Get Started</p>
           <h1 className="font-display text-4xl text-pine-800 leading-tight">
             Your consultation is free.
           </h1>
@@ -24,15 +24,15 @@ export default function Contact() {
 
           <div className="mt-10 space-y-4 text-pine-800/85">
             <div>
-              <div className="eyebrow text-clay">Phone</div>
+              <div className="eyebrow text-clay-dark">Phone</div>
               <a href="tel:+12816122320" className="font-display text-xl">(281) 612-2320</a>
             </div>
             <div>
-              <div className="eyebrow text-clay">Visit</div>
+              <div className="eyebrow text-clay-dark">Visit</div>
               <p>121 W Parkwood Ave, Friendswood, TX 77546</p>
             </div>
             <div>
-              <div className="eyebrow text-clay">Hours</div>
+              <div className="eyebrow text-clay-dark">Hours</div>
               <p className="text-sm leading-relaxed">
                 Mon&ndash;Wed: 8:30am&ndash;5pm<br />
                 Thu: 8:30am&ndash;6pm<br />

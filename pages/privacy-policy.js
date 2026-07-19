@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
         path="/privacy-policy/"
       />
       <section className="max-w-3xl mx-auto px-6 pt-16 pb-20">
-        <p className="eyebrow text-clay mb-4">Legal</p>
+        <p className="eyebrow text-clay-dark mb-4">Legal</p>
         <h1 className="font-display text-4xl text-pine-800 mb-3">Privacy Policy</h1>
         <p className="text-sm text-pine-800/60 mb-10">Effective Date: 08/02/2025</p>
 
@@ -84,7 +84,7 @@ export default function PrivacyPolicy() {
           and are committed to protecting the personal information you share
           with us. This Privacy Policy outlines how we collect, use,
           disclose, and safeguard your data when you visit our website{' '}
-          <a href="https://www.rxbodyfx.com" className="text-clay">www.rxbodyfx.com</a>,
+          <a href="https://www.rxbodyfx.com" className="text-clay-dark">www.rxbodyfx.com</a>,
           use our products and services, or otherwise interact with us. By
           using our services, you agree to the practices described in this
           policy.

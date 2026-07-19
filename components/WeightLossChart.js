@@ -13,13 +13,13 @@ export default function WeightLossChart() {
         role="img"
         aria-label="Bar chart: average weight loss at 72 weeks, SURMOUNT-5 trial. Semaglutide 13.7 percent. Tirzepatide 20.2 percent."
       >
-        <p className="eyebrow text-clay mb-6">SURMOUNT-5 &middot; Average Weight Loss at 72 Weeks</p>
+        <p className="eyebrow text-clay-dark mb-6">SURMOUNT-5 &middot; Average Weight Loss at 72 Weeks</p>
         <div className="space-y-6">
           {data.map((d) => (
             <div key={d.label}>
               <div className="flex justify-between items-baseline mb-1.5">
                 <span className="font-display text-lg text-pine-800">{d.label}</span>
-                <span className="font-display text-lg text-clay">{d.value}%</span>
+                <span className="font-display text-lg text-clay-dark">{d.value}%</span>
               </div>
               <div className="h-3 rounded-full bg-pine-800/8 overflow-hidden">
                 <div

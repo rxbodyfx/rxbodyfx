@@ -34,7 +34,7 @@ export default function PrimaryCare() {
           <div className="w-14 h-14 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800 mb-6">
             <Icon name="primaryCare" className="w-7 h-7" />
           </div>
-          <p className="eyebrow text-clay mb-4">Primary Care</p>
+          <p className="eyebrow text-clay-dark mb-4">Primary Care</p>
           <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
             The cornerstone of catching problems early.
           </h1>
@@ -59,7 +59,7 @@ export default function PrimaryCare() {
 
       <section className="max-w-4xl mx-auto px-6 py-16">
         <Reveal>
-          <p className="eyebrow text-clay mb-4">Why It Matters</p>
+          <p className="eyebrow text-clay-dark mb-4">Why It Matters</p>
           <h2 className="font-display text-2xl text-pine-800 mb-6">Prevention is cheaper than treatment.</h2>
           <p className="text-pine-800/80 leading-relaxed max-w-2xl mb-8">
             A lot of serious health conditions &mdash; diabetes, hypertension,

@@ -61,7 +61,7 @@ export default function MedicalWeightLoss() {
           <div className="w-14 h-14 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800 mb-6">
             <Icon name="weightLoss" className="w-7 h-7" />
           </div>
-          <p className="eyebrow text-clay mb-4">Medical Weight Loss</p>
+          <p className="eyebrow text-clay-dark mb-4">Medical Weight Loss</p>
           <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
             Weight loss built on your biology, not willpower alone.
           </h1>
@@ -101,13 +101,13 @@ export default function MedicalWeightLoss() {
 
       <section className="max-w-4xl mx-auto px-6 py-16">
         <Reveal>
-          <p className="eyebrow text-clay mb-4">The Framework</p>
+          <p className="eyebrow text-clay-dark mb-4">The Framework</p>
           <h2 className="font-display text-2xl md:text-3xl text-pine-800 mb-8">Every plan touches all five pillars.</h2>
         </Reveal>
         <div className="grid sm:grid-cols-2 gap-6">
           {pillars.map((p, i) => (
             <Reveal key={p.title} delay={i * 70} className="border border-pine/10 rounded-2xl p-6 bg-white">
-              <p className="eyebrow text-clay mb-2">0{i + 1}</p>
+              <p className="eyebrow text-clay-dark mb-2">0{i + 1}</p>
               <h3 className="font-display text-lg text-pine-800">{p.title}</h3>
               <p className="mt-2 text-sm text-pine-800/75 leading-relaxed">{p.copy}</p>
             </Reveal>
@@ -137,7 +137,7 @@ export default function MedicalWeightLoss() {
 
       <section className="max-w-4xl mx-auto px-6 py-16">
         <Reveal>
-          <p className="eyebrow text-clay mb-4">Common Questions</p>
+          <p className="eyebrow text-clay-dark mb-4">Common Questions</p>
           <h2 className="font-display text-2xl text-pine-800 mb-8">About this program specifically</h2>
         </Reveal>
         <div className="space-y-6">

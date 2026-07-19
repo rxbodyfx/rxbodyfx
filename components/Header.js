@@ -21,11 +21,11 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-sand/95 backdrop-blur border-b border-pine/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-[72px] md:h-20">
         <Link href="/" className="font-display text-lg sm:text-xl tracking-tight text-pine-800 shrink-0">
-          RxBODY<span className="text-clay">Fx</span>
+          RxBODY<span className="text-clay-dark">Fx</span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 font-body text-sm">
           {primaryLinks.map((l) => (
-            <Link key={l.href} href={l.href} className="hover:text-clay transition-colors">
+            <Link key={l.href} href={l.href} className="hover:text-clay-dark transition-colors">
               {l.label}
             </Link>
           ))}
@@ -35,7 +35,7 @@ export default function Header() {
             onMouseLeave={() => setLearnOpen(false)}
           >
             <button
-              className="hover:text-clay transition-colors flex items-center gap-1"
+              className="hover:text-clay-dark transition-colors flex items-center gap-1"
               onClick={() => setLearnOpen((v) => !v)}
               aria-expanded={learnOpen}
               aria-haspopup="true"
@@ -58,7 +58,7 @@ export default function Header() {
             )}
           </div>
           <Link
-            href="/contact/"
+            href="/get-started/"
             className="bg-pine-800 text-sand px-5 py-2.5 rounded-full hover:bg-clay transition-colors"
           >
             Start Your Consult
@@ -81,20 +81,20 @@ export default function Header() {
       </div>
       {open && (
         <nav className="md:hidden flex flex-col px-4 sm:px-6 pb-5 font-body text-base max-h-[calc(100vh-72px)] overflow-y-auto">
-          <p className="eyebrow text-clay pt-3 pb-1">Care</p>
+          <p className="eyebrow text-clay-dark pt-3 pb-1">Care</p>
           {primaryLinks.map((l) => (
             <Link key={l.href} href={l.href} className="py-3 border-b border-pine/10 min-h-[44px] flex items-center" onClick={() => setOpen(false)}>
               {l.label}
             </Link>
           ))}
-          <p className="eyebrow text-clay pt-4 pb-1">Learn</p>
+          <p className="eyebrow text-clay-dark pt-4 pb-1">Learn</p>
           {learnLinks.map((l) => (
             <Link key={l.href} href={l.href} className="py-3 border-b border-pine/10 min-h-[44px] flex items-center" onClick={() => setOpen(false)}>
               {l.label}
             </Link>
           ))}
           <Link
-            href="/contact/"
+            href="/get-started/"
             className="mt-5 mb-2 bg-pine-800 text-sand text-center px-5 py-3.5 rounded-full min-h-[48px] flex items-center justify-center"
             onClick={() => setOpen(false)}
           >

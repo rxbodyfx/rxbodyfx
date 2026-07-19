@@ -23,7 +23,7 @@ export default function RpmDiagram() {
               </div>
             </div>
             {i < nodes.length - 1 && (
-              <div className="hidden sm:flex items-center justify-center flex-1 pt-6 text-clay/50" aria-hidden="true">
+              <div className="hidden sm:flex items-center justify-center flex-1 pt-6 text-clay-dark/50" aria-hidden="true">
                 <Icon name="ongoing" className="w-4 h-4 opacity-0" />
                 <svg width="28" height="12" viewBox="0 0 28 12" fill="none">
                   <path d="M0 6h22M18 1l6 5-6 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

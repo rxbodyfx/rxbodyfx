@@ -48,7 +48,7 @@ export default function TrustedSources() {
           rel="noopener noreferrer"
           className="block border border-pine/10 rounded-2xl p-6 bg-white hover:border-clay transition-colors"
         >
-          <p className="text-xs text-clay font-semibold uppercase tracking-wide">{s.type}</p>
+          <p className="text-xs text-clay-dark font-semibold uppercase tracking-wide">{s.type}</p>
           <h3 className="mt-2 font-display text-base text-pine-800">{s.name}</h3>
           <p className="mt-2 text-sm text-pine-800/70 leading-relaxed">{s.note}</p>
         </a>

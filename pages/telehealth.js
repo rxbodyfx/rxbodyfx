@@ -65,7 +65,7 @@ export default function Telehealth() {
       />
 
       <section className="max-w-6xl mx-auto px-6 pt-16 pb-14 md:pt-20">
-        <p className="eyebrow text-clay mb-4">Now Available Nationwide</p>
+        <p className="eyebrow text-clay-dark mb-4">Now Available Nationwide</p>
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 max-w-2xl leading-tight">
           The same physician-led care, now in all 50 states.
         </h1>
@@ -83,7 +83,7 @@ export default function Telehealth() {
       <div className="rule max-w-6xl mx-auto" />
 
       <section className="max-w-6xl mx-auto px-6 py-16">
-        <p className="eyebrow text-clay mb-4">How It Works</p>
+        <p className="eyebrow text-clay-dark mb-4">How It Works</p>
         <h2 className="font-display text-3xl text-pine-800 mb-12">From consult to ongoing care.</h2>
 
         <div className="relative">
@@ -95,7 +95,7 @@ export default function Telehealth() {
                   <Icon name={s.icon} className="w-6 h-6" />
                 </div>
                 <div className="pt-2">
-                  <p className="eyebrow text-clay/70 mb-1">Step {i + 1}</p>
+                  <p className="eyebrow text-clay-dark/70 mb-1">Step {i + 1}</p>
                   <h3 className="font-display text-xl text-pine-800">{s.title}</h3>
                   <p className="mt-2 text-pine-800/75 leading-relaxed max-w-lg">{s.copy}</p>
                 </div>
@@ -133,7 +133,7 @@ export default function Telehealth() {
 
       <section className="max-w-6xl mx-auto px-6 py-16">
         <Reveal>
-          <p className="eyebrow text-clay mb-4">Is This For You?</p>
+          <p className="eyebrow text-clay-dark mb-4">Is This For You?</p>
           <h2 className="font-display text-2xl md:text-3xl text-pine-800 mb-8">Who telehealth care fits best.</h2>
         </Reveal>
         <div className="bg-white border border-pine/10 rounded-2xl p-8">

@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <div className="font-body">
       <OrgSchema />
       <Header />
-      <main>{children}</main>
+      <main id="main-content">{children}</main>
       <Footer />
     </div>
   );

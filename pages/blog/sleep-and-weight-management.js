@@ -26,7 +26,7 @@ export default function Post() {
       />
       <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog/' }, { label: 'Sleep & Weight Management', href: '/blog/sleep-and-weight-management/' }]} />
       <article className="max-w-3xl mx-auto px-6 pt-16 pb-24">
-        <p className="eyebrow text-clay mb-4">January 2026</p>
+        <p className="eyebrow text-clay-dark mb-4">January 2026</p>
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
           The Role of Sleep in Weight Management
         </h1>

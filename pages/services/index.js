@@ -25,7 +25,7 @@ export default function Services() {
         path="/services/"
       />
       <section className="max-w-6xl mx-auto px-6 pt-16 pb-14">
-        <p className="eyebrow text-clay mb-4">Our Services</p>
+        <p className="eyebrow text-clay-dark mb-4">Our Services</p>
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 max-w-2xl leading-tight">
           Care built on five pillars, not one prescription.
         </h1>
@@ -40,7 +40,7 @@ export default function Services() {
               </div>
               <h2 className="font-display text-xl text-pine-800">{s.title}</h2>
               <p className="mt-3 text-sm leading-relaxed text-pine-800/75">{s.copy}</p>
-              <span className="mt-5 inline-block text-sm text-clay font-medium">Learn more &rarr;</span>
+              <span className="mt-5 inline-block text-sm text-clay-dark font-medium">Learn more &rarr;</span>
             </Link>
           </Reveal>
         ))}
@@ -49,7 +49,7 @@ export default function Services() {
       <div className="rule max-w-6xl mx-auto" />
 
       <section className="max-w-6xl mx-auto px-6 py-16">
-        <p className="eyebrow text-clay mb-4">Also Available In-Clinic</p>
+        <p className="eyebrow text-clay-dark mb-4">Also Available In-Clinic</p>
         <div className="grid md:grid-cols-3 gap-10">
           {additional.map((s, i) => (
             <Reveal key={s.href} delay={i * 100}>
@@ -60,7 +60,7 @@ export default function Services() {
                 <div>
                   <h3 className="font-display text-lg text-pine-800">{s.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-pine-800/75">{s.copy}</p>
-                  <span className="mt-3 inline-block text-sm text-clay font-medium">Learn more &rarr;</span>
+                  <span className="mt-3 inline-block text-sm text-clay-dark font-medium">Learn more &rarr;</span>
                 </div>
               </Link>
             </Reveal>

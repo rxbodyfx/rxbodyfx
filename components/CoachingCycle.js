@@ -20,13 +20,13 @@ export default function CoachingCycle() {
               <p className="font-display text-sm text-pine-800">{s.label}</p>
             </div>
             {i < steps.length - 1 ? (
-              <div className="hidden sm:flex items-center justify-center flex-1 text-clay/50" aria-hidden="true">
+              <div className="hidden sm:flex items-center justify-center flex-1 text-clay-dark/50" aria-hidden="true">
                 <svg width="28" height="12" viewBox="0 0 28 12" fill="none">
                   <path d="M0 6h22M18 1l6 5-6 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
             ) : (
-              <div className="hidden sm:flex items-center justify-center text-clay/50 pl-2" aria-hidden="true">
+              <div className="hidden sm:flex items-center justify-center text-clay-dark/50 pl-2" aria-hidden="true">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                   <path d="M4 12a8 8 0 0 1 14-5.2M20 12a8 8 0 0 1-14 5.2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                   <path d="M18 4v3h-3M6 20v-3h3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

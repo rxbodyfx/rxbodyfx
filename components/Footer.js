@@ -12,7 +12,7 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <div className="eyebrow text-clay mb-3">Care</div>
+          <div className="eyebrow text-clay-dark mb-3">Care</div>
           <ul className="space-y-2 text-sm">
             <li><Link href="/services/medical-weight-loss/" className="hover:text-sand">Medical Weight Loss</Link></li>
             <li><Link href="/services/hormone-optimization/" className="hover:text-sand">Hormone Optimization</Link></li>
@@ -23,7 +23,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <div className="eyebrow text-clay mb-3">Learn</div>
+          <div className="eyebrow text-clay-dark mb-3">Learn</div>
           <ul className="space-y-2 text-sm">
             <li><Link href="/telehealth/" className="hover:text-sand">Telehealth, 50 States</Link></li>
             <li><Link href="/research/" className="hover:text-sand">Research &amp; Evidence</Link></li>
@@ -32,7 +32,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <div className="eyebrow text-clay mb-3">Practice</div>
+          <div className="eyebrow text-clay-dark mb-3">Practice</div>
           <ul className="space-y-2 text-sm">
             <li><Link href="/team/" className="hover:text-sand">Our Team</Link></li>
             <li><Link href="/privacy-policy/" className="hover:text-sand">Privacy Policy</Link></li>
@@ -40,7 +40,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <div className="eyebrow text-clay mb-3">Visit</div>
+          <div className="eyebrow text-clay-dark mb-3">Visit</div>
           <p className="text-sm leading-relaxed">
             121 W Parkwood Ave<br />Friendswood, TX 77546<br />
             <a href="tel:+12816122320" className="hover:text-sand">(281) 612-2320</a>

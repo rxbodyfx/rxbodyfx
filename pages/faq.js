@@ -72,7 +72,7 @@ function FaqItem({ item, index }) {
         <h2 className="font-display text-lg text-pine-800">{item.q}</h2>
         <svg
           width="18" height="18" viewBox="0 0 24 24" fill="none"
-          className={`shrink-0 text-clay transition-transform duration-300 ${open ? 'rotate-45' : ''}`}
+          className={`shrink-0 text-clay-dark transition-transform duration-300 ${open ? 'rotate-45' : ''}`}
         >
           <path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
         </svg>
@@ -99,7 +99,7 @@ export default function FAQ() {
         jsonLd={jsonLd}
       />
       <section className="max-w-3xl mx-auto px-6 pt-16 pb-20">
-        <p className="eyebrow text-clay mb-4">FAQ</p>
+        <p className="eyebrow text-clay-dark mb-4">FAQ</p>
         <h1 className="font-display text-4xl text-pine-800 mb-10">Common questions</h1>
         <div className="space-y-4">
           {faqs.map((f, i) => (

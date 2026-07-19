@@ -87,7 +87,7 @@ export default function BlogIndex() {
         path="/blog/"
       />
       <section className="max-w-4xl mx-auto px-6 pt-16 pb-12">
-        <p className="eyebrow text-clay mb-4">Blog</p>
+        <p className="eyebrow text-clay-dark mb-4">Blog</p>
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
           Straight answers, not sales copy.
         </h1>
@@ -101,10 +101,10 @@ export default function BlogIndex() {
         {posts.map((p, i) => (
           <Reveal key={p.slug} delay={i * 40}>
             <Link href={`/blog/${p.slug}/`} className="block h-full border border-pine/10 rounded-2xl p-6 hover:border-clay hover:bg-white hover:-translate-y-1 transition-all">
-              <p className="text-xs text-clay font-semibold uppercase tracking-wide">{p.category}</p>
+              <p className="text-xs text-clay-dark font-semibold uppercase tracking-wide">{p.category}</p>
               <h2 className="mt-2 font-display text-lg text-pine-800">{p.title}</h2>
               <p className="mt-2 text-sm text-pine-800/70 leading-relaxed">{p.excerpt}</p>
-              <span className="mt-4 inline-block text-sm text-clay font-medium">Read article &rarr;</span>
+              <span className="mt-4 inline-block text-sm text-clay-dark font-medium">Read article &rarr;</span>
             </Link>
           </Reveal>
         ))}

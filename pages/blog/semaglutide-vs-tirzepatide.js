@@ -27,7 +27,7 @@ export default function Post() {
       />
       <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog/' }, { label: 'Semaglutide vs. Tirzepatide', href: '/blog/semaglutide-vs-tirzepatide/' }]} />
       <article className="max-w-3xl mx-auto px-6 pt-16 pb-24">
-        <p className="eyebrow text-clay mb-4">January 2026</p>
+        <p className="eyebrow text-clay-dark mb-4">January 2026</p>
         <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
           Semaglutide vs. Tirzepatide: What&rsquo;s the Difference?
         </h1>

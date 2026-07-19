@@ -26,7 +26,7 @@ export default function Breadcrumbs({ items }) {
               {i === items.length - 1 ? (
                 <span className="text-pine-800/70">{item.label}</span>
               ) : (
-                <Link href={item.href} className="hover:text-clay">{item.label}</Link>
+                <Link href={item.href} className="hover:text-clay-dark">{item.label}</Link>
               )}
             </li>
           ))}

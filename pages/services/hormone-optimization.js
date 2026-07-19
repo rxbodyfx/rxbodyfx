@@ -49,7 +49,7 @@ export default function HormoneOptimization() {
           <div className="w-14 h-14 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800 mb-6">
             <Icon name="hormone" className="w-7 h-7" />
           </div>
-          <p className="eyebrow text-clay mb-4">Hormone Optimization</p>
+          <p className="eyebrow text-clay-dark mb-4">Hormone Optimization</p>
           <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
             Fatigue and weight gain aren&rsquo;t always about willpower.
           </h1>
@@ -97,7 +97,7 @@ export default function HormoneOptimization() {
 
       <section className="max-w-4xl mx-auto px-6 py-16">
         <Reveal>
-          <p className="eyebrow text-clay mb-4">The Process</p>
+          <p className="eyebrow text-clay-dark mb-4">The Process</p>
           <h2 className="font-display text-2xl text-pine-800 mb-8">From symptoms to a treatment plan.</h2>
         </Reveal>
         <div className="bg-white border border-pine/10 rounded-2xl p-6 sm:p-8">
@@ -114,7 +114,7 @@ export default function HormoneOptimization() {
                   </div>
                 </div>
                 {i < testingSteps.length - 1 && (
-                  <div className="hidden sm:flex items-center justify-center flex-1 pt-6 text-clay/50" aria-hidden="true">
+                  <div className="hidden sm:flex items-center justify-center flex-1 pt-6 text-clay-dark/50" aria-hidden="true">
                     <svg width="28" height="12" viewBox="0 0 28 12" fill="none">
                       <path d="M0 6h22M18 1l6 5-6 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>

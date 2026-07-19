@@ -7,6 +7,7 @@ module.exports = {
         pine: { DEFAULT: "#1F3F3A", 900: "#132824", 800: "#1F3F3A", 700: "#2A544D" },
         sand: "#FAF7F1",
         clay: "#B8863B",
+        "clay-dark": "#8A5F20",
         moss: "#7C9A82",
         rust: "#A5432E",
       },

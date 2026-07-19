@@ -43,7 +43,7 @@ export default function NutritionCoaching() {
           <div className="w-14 h-14 rounded-full bg-pine-800/8 flex items-center justify-center text-pine-800 mb-6">
             <Icon name="nutrition" className="w-7 h-7" />
           </div>
-          <p className="eyebrow text-clay mb-4">Nutrition &amp; Coaching</p>
+          <p className="eyebrow text-clay-dark mb-4">Nutrition &amp; Coaching</p>
           <h1 className="font-display text-4xl md:text-5xl text-pine-800 leading-tight">
             A plan is only as good as the person following up on it.
           </h1>
@@ -66,7 +66,7 @@ export default function NutritionCoaching() {
 
       <section className="max-w-4xl mx-auto px-6 py-16">
         <Reveal>
-          <p className="eyebrow text-clay mb-4">In Every Session</p>
+          <p className="eyebrow text-clay-dark mb-4">In Every Session</p>
           <h2 className="font-display text-2xl text-pine-800 mb-8">What coaching actually covers.</h2>
         </Reveal>
         <div className="bg-white border border-pine/10 rounded-2xl p-8">
