@@ -3,24 +3,6 @@ import Seo from '../components/Seo';
 import FivePillars from '../components/FivePillars';
 import Link from 'next/link';
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'MedicalBusiness',
-  name: 'RxBODYFx Metabolic Reset Weight Loss Program',
-  url: 'https://www.rxbodyfx.com',
-  telephone: '+1-281-612-2320',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '121 W Parkwood Ave',
-    addressLocality: 'Friendswood',
-    addressRegion: 'TX',
-    postalCode: '77546',
-    addressCountry: 'US',
-  },
-  medicalSpecialty: ['Weight Management', 'Endocrinology'],
-  areaServed: 'United States',
-};
-
 const services = [
   {
     href: '/services/medical-weight-loss/',
@@ -46,7 +28,6 @@ export default function Home() {
         title="RxBODYFx | Medical Weight Loss & Hormone Optimization, Nationwide"
         description="Physician-led medical weight loss, GLP-1 therapy, and hormone optimization. In-person in Friendswood, TX and by telehealth in all 50 states."
         path="/"
-        jsonLd={jsonLd}
       />
 
       {/* Hero */}
