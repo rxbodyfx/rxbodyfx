@@ -64,6 +64,9 @@ export default function Research() {
 
       <section className="max-w-4xl mx-auto px-6 pb-4">
         <WeightLossChart />
+        <Link href="/blog/semaglutide-vs-tirzepatide/" className="mt-4 inline-block text-sm text-clay-dark font-medium">
+          Read the full breakdown: Semaglutide vs. Tirzepatide &rarr;
+        </Link>
       </section>
 
       <section className="max-w-4xl mx-auto px-6 py-8">

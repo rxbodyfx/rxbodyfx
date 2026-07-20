@@ -83,6 +83,9 @@ export default function Post() {
         </div>
 
         <WeightLossChart />
+        <Link href="/research/" className="block mt-3 mb-2 text-sm text-clay-dark font-medium">
+          See more trial data, national statistics, and trusted sources &rarr;
+        </Link>
 
         <div className="space-y-6 text-pine-800/85 leading-relaxed text-lg">
           <h2 className="font-display text-2xl text-pine-800 pt-4">Which one is right for you?</h2>
